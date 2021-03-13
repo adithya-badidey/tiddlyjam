@@ -1,0 +1,15 @@
+created: 20210313202431663
+modified: 20210313210414015
+tags: blog
+title: Why TiddlyJam?
+type: text/vnd.tiddlywiki
+
+Why does this exist? Why did someone feel the need to make another static website generator?
+
+I started using [[TiddlyWiki|https://tiddlywiki.com]] more than 5 years back as a note-keeping device. I found myself enamoured (still am) by its elegant structure and its premise of maintenance-free all-in-one software (its also a [[quine|https://en.wikipedia.org/wiki/Quine_(computing)]]!). 
+
+In 2020, during the lockdowns, I wanted to create a website/blog for myself and thought - TiddlyWiki has a great template engine - why not create one using that? Thanks to several great resources like https://www.didaxy.com/ and https://nesslabs.com/digital-garden-tiddlywiki, I was able to create my website at https://adithyab.in in a fairly short time. 
+
+Keeping with the spirit of TiddlyWiki, I am open-sourcing my work in TiddlyJam. Now, its yours too :)
+
+- Adithya
