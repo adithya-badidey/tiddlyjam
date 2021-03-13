@@ -9,7 +9,7 @@ branches:
   - master
 
 install:
-  - git clone -–depth 1 https://github.com/Jermolene/TiddlyWiki5.git
+  - git clone -–--depth 1 https://github.com/Jermolene/TiddlyWiki5.git
   - cd TiddlyWiki5
   - npm link
   - cd ..
