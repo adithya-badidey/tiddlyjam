@@ -1,9 +1,9 @@
 created: 20210306160051062
 dependents: 
 description: A static website generator for Tiddlywiki
-modified: 20210314023659529
+modified: 20210314160827375
 name: TiddlyJam
 plugin-type: plugin
 title: $:/plugins/adithyab/tiddlyjam
 type: application/json
-version: 0.0.5
+version: 0.0.6

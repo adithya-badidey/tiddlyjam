@@ -18,6 +18,7 @@ script:
   - tiddlywiki --–verbose --–build index
   - mv ./output/index.html ./tiddly.html
   - tiddlywiki --rendertiddlers '[all[tiddlers+shadows]tag[$:/plugins/adithyab/tiddlyjam/live]]' $:/plugins/adithyab/tiddlyjam/renderer/base . text/plain
+  - tiddlywiki --render '[all[tiddlers+shadows][$:/plugins/adithyab/tiddlyjam/renderer/sitemap]]' 'sitemap.xml' text/plain
   - mv ./tiddly.html ./output/tiddly.html
 
 

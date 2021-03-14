@@ -25,16 +25,16 @@
             "bag": "default"
         },
         "$:/plugins/adithyab/tiddlyjam/backendui/category/row": {
-            "text": "<tr>\n<td><$view field=\"modified\" format=\"date\" template=\"DDth mmm YYYY\"/></td>\n<td><$list filter=\"[all[current]tag[$:/plugins/adithyab/tiddlyjam/live]]\" >\n{{||$:/plugins/adithyab/tiddlyjam/backendui/category/row/published}}\n</$list>\n<$list filter=\"[all[current]!tag[$:/plugins/adithyab/tiddlyjam/live]]\" >\n{{||$:/plugins/adithyab/tiddlyjam/backendui/category/row/draft}}\n</$list>\n</td>\n<td><$link><<get_display_name>></$link><br/><<get_description>></td>\n<td><<get_relative_url>></td>\n<td><$list filter=\"[all[current]tags[]sort[title]] -[tag[$:/plugins/adithyab/tiddlyjam/category]] -$:/plugins/adithyab/tiddlyjam/live\" template=\"$:/core/ui/TagTemplate\"></td>\n</tr>\n",
+            "text": "<tr>\n  <td>\n    <h3 class=\"rowitem-name\">\n        <$link>\n          <<get_display_name>>\n        </$link>\n    </h3> - \n    <span class=\"rowitem-modified\">\n      <$view field=\"modified\" format=\"date\" template=\"DDth mmm YYYY\" />\n    </span>\n    <p class=\"rowitem-description\">\n        <<get_description>>\n    </p>\n    <div class=\"rowitem-tags\">\n      <$list\n        filter=\"[all[current]tags[]sort[title]] -[tag[$:/plugins/adithyab/tiddlyjam/category]] -$:/plugins/adithyab/tiddlyjam/internals -$:/plugins/adithyab/tiddlyjam/live\"\n        template=\"$:/core/ui/TagTemplate\" />\n    </div>\n  </td>\n  <td>\n    <div class=\"rowitem-url\">\n      <<get_relative_url>>\n    </div>\n    <div class=\"action\">\n      <$list filter=\"[all[current]tag[$:/plugins/adithyab/tiddlyjam/live]]\">\n        {{||$:/plugins/adithyab/tiddlyjam/backendui/category/row/published}}\n      </$list>\n      <$list filter=\"[all[current]!tag[$:/plugins/adithyab/tiddlyjam/live]]\">\n        {{||$:/plugins/adithyab/tiddlyjam/backendui/category/row/draft}}\n      </$list>\n    </div>\n  </td>\n</tr>",
+            "bag": "default",
+            "revision": "1",
             "type": "text/vnd.tiddlywiki",
             "title": "$:/plugins/adithyab/tiddlyjam/backendui/category/row",
             "tags": "$:/plugins/adithyab/tiddlyjam/backendui",
-            "revision": "0",
             "published": "20200910183847840",
             "name": "test",
-            "modified": "20201117084646251",
-            "created": "20200910072557350",
-            "bag": "default"
+            "modified": "20210314160544516",
+            "created": "20200910072557350"
         },
         "$:/plugins/adithyab/tiddlyjam/backendui/category/row/draft": {
             "text": "<$fieldmangler>\n<$button message=\"tm-add-tag\" param=\"$:/plugins/adithyab/tiddlyjam/live\">\n<$action-setfield $field=\"published\" $value=<<now [UTC]YYYY0MM0DD0hh0mm0ssXXX>> />\nPublish\n</$button>\n</$fieldmangler>",
@@ -57,13 +57,13 @@
             "modified": "20210314011440586",
             "created": "20200910145708380"
         },
-        "$:/plugins/adithyab/tiddlyjam/backendui/dashboard": {
+        "TiddlyJam Dashboard": {
             "created": "20200910064736206",
             "text": "<$macrocall $name=\"tabs\" tabsList=\"[all[tiddlers+shadows]tag[$:/plugins/adithyab/tiddlyjam/backendui/dashboardTab]!sort[created]]\" default=\"$:/plugins/adithyab/tiddlyjam/backendui/pagesTab\"/>",
             "bag": "default",
             "revision": "7",
             "type": "text/vnd.tiddlywiki",
-            "title": "$:/plugins/adithyab/tiddlyjam/backendui/dashboard",
+            "title": "TiddlyJam Dashboard",
             "tags": "$:/plugins/adithyab/tiddlyjam/backendui",
             "modified": "20210314020714435"
         },
@@ -143,15 +143,15 @@
             "bag": "default"
         },
         "$:/plugins/adithyab/tiddlyjam/page": {
-            "created": "20200814161110754",
             "text": "All this does is provide renderer to tiddlies tagged as $:/plugins/adithyab/tiddlyjam/page",
             "bag": "default",
-            "revision": "0",
+            "revision": "1",
             "type": "text/vnd.tiddlywiki",
             "title": "$:/plugins/adithyab/tiddlyjam/page",
             "tags": "$:/plugins/adithyab/tiddlyjam/internals $:/plugins/adithyab/tiddlyjam/category",
             "renderer": "$:/plugins/adithyab/tiddlyjam/renderer/base/body",
-            "modified": "20210314015956866"
+            "modified": "20210314160544552",
+            "created": "20200814161110754"
         },
         "$:/plugins/adithyab/tiddlyjam/renderer/base": {
             "text": "\\whitespace trim\n\\define tv-wikilink-template() $uri_doubleencoded$.html\n\\define tv-config-toolbar-icons() no\n\\define tv-config-toolbar-text() no\n\\define tv-config-toolbar-class() tc-btn-invisible\n\\import [[$:/core/ui/PageMacros]] [all[shadows+tiddlers]tag[$:/tags/Macro]!has[draft.of]]\n`\n<!doctype html>\n<html lang=\"en\">\n\n<head>\n  <meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\" />\n\n  <meta name=\"generator\" content=\"TiddlyWiki\" />\n  <meta name=\"tiddlywiki-version\" content=\"`{{$:/core/templates/version}}`\" />\n\n  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\n  <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black-translucent\" />\n  <meta name=\"mobile-web-app-capable\" content=\"yes\" />\n\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n\n  <meta name=\"format-detection\" content=\"telephone=no\">\n\n  <link id=\"faviconLink\" rel=\"shortcut icon\" href=\"/favicon.ico\">\n\n`{{||$:/plugins/adithyab/tiddlyjam/renderer/base/seotags}}\n  {{$:/plugins/adithyab/tiddlyjam/renderer/base/imports}}\n  `\n</head>\n\n<body class=\"tc-body\">\n  `\n  <$wikify name=\"output\" text={{$:/plugins/adithyab/tiddlyjam/renderer/base/converter}} mode=\"inline\" output=\"html\">\n    <$text text=<<output>>/>\n  </$wikify>\n\n{{$:/plugins/adithyab/tiddlyjam/renderer/base/footer||$:/plugins/adithyab/tiddlyjam/htmlify}}\n\t\n  `\n</body>\n</html>\n`",
@@ -386,19 +386,29 @@
             "renderer": "$:/plugins/adithyab/tiddlyjam/renderer/blog/body",
             "name": "Blog",
             "modifier": "Adithya_",
-            "modified": "20210314020047768",
-            "description": "The place where my blogs are.",
+            "modified": "20210314160633351",
+            "description": "A place for blogs.",
             "creator": "Adithya"
         },
         "$:/plugins/adithyab/tiddlyjam/backendui/macros": {
-            "created": "20210313235841675",
-            "text": "\\define link_with_tags(modifier)\n<$link><$view field=\"title\"/></$link>&nbsp;<$list filter=\"[all[current]tags[]sort[title]] $modifier$\" template=\"$:/core/ui/TagTemplate\"/>\n\\end\n\n\\define category-list(tagname)\n\t<table>\n\t<tr>\n\t<th>Last Modified</th>\n\t<th>Status</th>\n\t<th>Name</th>\n\t<th>Path</th>\n\t<th>Tags</th>\n\t</tr>\n\t{{{ [all[tiddlers+shadows]tag[$tagname$]!sort[modified]] || $:/plugins/adithyab/tiddlyjam/backendui/category/row }}}\n\t</table>\n\\end\n\n\\define export-static-website()\n<$action-sendmessage $message=\"tm-zip-create\" $param=\"$:/temp/_ZipTiddler\"/>\n<$list filter=\"[tag[$:/plugins/adithyab/tiddlyjam/live]]\">\n<$action-sendmessage $message=\"tm-zip-render-file\" $param=\"$:/temp/_ZipTiddler\" tiddler=<<currentTiddler>> template=\"$:/plugins/adithyab/tiddlyjam/renderer/base\"/>\n</$list>\n<$action-sendmessage $message=\"tm-zip-download\" $param=\"$:/temp/_ZipTiddler\" filename=\"tiddlyjam.zip\"/>\n\\end\n\n\\define export-static-website2()\n<$action-sendmessage $message=\"tm-zip-create\" $param=\"$:/temp/_ZipTiddler\"/>\n<$list filter=\"[tag[$:/plugins/adithyab/tiddlyjam/live]]\">\n<$action-sendmessage $message=\"tm-zip-render-file\" $param=\"$:/temp/_ZipTiddler\" filename={{{ [<currentTiddler>encodeuricomponent[]addsuffix[.html]] }}} tiddler=<<currentTiddler>> template=\"$:/plugins/adithyab/tiddlyjam/renderer/base\"/>\n</$list>\n<$action-sendmessage $message=\"tm-zip-render-file\" $param=\"$:/temp/_ZipTiddler\" filename=\"sitemap.xml\" template=\"$:/plugins/adithyab/tiddlyjam/renderer/sitemap\"/>\n<$action-sendmessage $message=\"tm-zip-download\" $param=\"$:/temp/_ZipTiddler\" filename=\"tiddlyjam.zip\"/>\n\\end",
+            "text": "\\define link_with_tags(modifier)\n<$link><$view field=\"title\"/></$link>&nbsp;<$list filter=\"[all[current]tags[]sort[title]] $modifier$\" template=\"$:/core/ui/TagTemplate\"/>\n\\end\n\n\\define category-list(tagname)\n\t<table>\n\t<tr>\n\t<th>Item</th>\n\t<th>Status</th>\n\t</tr>\n\t{{{ [all[tiddlers+shadows]tag[$tagname$]!sort[modified]] || $:/plugins/adithyab/tiddlyjam/backendui/category/row }}}\n\t</table>\n\\end\n\n\\define export-static-website()\n<$action-sendmessage $message=\"tm-zip-create\" $param=\"$:/temp/_ZipTiddler\"/>\n<$list filter=\"[tag[$:/plugins/adithyab/tiddlyjam/live]]\">\n<$action-sendmessage $message=\"tm-zip-render-file\" $param=\"$:/temp/_ZipTiddler\" tiddler=<<currentTiddler>> template=\"$:/plugins/adithyab/tiddlyjam/renderer/base\"/>\n</$list>\n<$action-sendmessage $message=\"tm-zip-download\" $param=\"$:/temp/_ZipTiddler\" filename=\"tiddlyjam.zip\"/>\n\\end\n\n\\define export-static-website2()\n<$action-sendmessage $message=\"tm-zip-create\" $param=\"$:/temp/_ZipTiddler\"/>\n<$list filter=\"[tag[$:/plugins/adithyab/tiddlyjam/live]]\">\n<$action-sendmessage $message=\"tm-zip-render-file\" $param=\"$:/temp/_ZipTiddler\" filename={{{ [<currentTiddler>encodeuricomponent[]addsuffix[.html]] }}} tiddler=<<currentTiddler>> template=\"$:/plugins/adithyab/tiddlyjam/renderer/base\"/>\n</$list>\n<$action-sendmessage $message=\"tm-zip-render-file\" $param=\"$:/temp/_ZipTiddler\" filename=\"sitemap.xml\" template=\"$:/plugins/adithyab/tiddlyjam/renderer/sitemap\"/>\n<$action-sendmessage $message=\"tm-zip-download\" $param=\"$:/temp/_ZipTiddler\" filename=\"tiddlyjam.zip\"/>\n\\end",
             "bag": "default",
-            "revision": "4",
+            "revision": "1",
             "type": "text/vnd.tiddlywiki",
             "title": "$:/plugins/adithyab/tiddlyjam/backendui/macros",
             "tags": "$:/tags/Macro $:/plugins/adithyab/tiddlyjam/backendui",
-            "modified": "20210314023527685"
+            "modified": "20210314160544538",
+            "created": "20210313235841675"
+        },
+        "$:/plugins/adithyab/tiddlyjam/backendui/styling": {
+            "text": ".rowitem-modified {\nfont-size: 90%;\n}\n.rowitem-name {\nmargin-top:0;\nmargin-left: 10px;\nmargin-bottom:0;\ndisplay: inline\n}\n.rowitem-description {\nmargin-top:0;\nmargin-bottom:0;\n}\n.rowitem-tags {\nmargin-bottom: 5px\n}\n.rowitem-url {\ntext-decoration: underline;\n}",
+            "bag": "default",
+            "revision": "9",
+            "type": "text/css",
+            "title": "$:/plugins/adithyab/tiddlyjam/backendui/styling",
+            "tags": "$:/tags/Stylesheet",
+            "modified": "20210314070352388",
+            "created": "20210314064708311"
         }
     }
 }

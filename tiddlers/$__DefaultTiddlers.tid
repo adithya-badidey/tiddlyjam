@@ -1,7 +1,8 @@
 created: 20210313205753106
-modified: 20210314015739252
+modified: 20210314161059521
 title: $:/DefaultTiddlers
 type: text/vnd.tiddlywiki
 
-$:/plugins/adithyab/tiddlyjam
-$:/plugins/adithyab/tiddlyjam/backendui/dashboard
+[[Getting Started with TiddlyJam]]
+[[TiddlyJam Dashboard]]
+

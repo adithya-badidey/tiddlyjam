@@ -1,0 +1,19 @@
+created: 20210314161116928
+modified: 20210314170116239
+tags: blog
+title: Getting Started with TiddlyJam
+type: text/vnd.tiddlywiki
+
+For now only the nodejs installation of TiddlyWiki is supported. I will be adding support for other things soon. Checkout the github repo (https://github.com/adithya-badidey/tiddlyjam) for more details on future plans.
+
+!! on NodeJs
+* Make sure TiddlyWiki is installed and upgraded to the latest version as instructed by https://tiddlywiki.com/#GettingStarted%20-%20Node.js.
+** `tiddlywiki --version` should print `5.1.23`
+* Open your wiki in the browser and drag and drop this plugin [[$:/plugins/adithyab/tiddlyjam]] to import it
+* `cd` to the folder containing the wiki and run the following commands:
+** `tiddlywiki --rendertiddlers '[all[tiddlers+shadows]tag[$:/plugins/adithyab/tiddlyjam/live]]' $:/plugins/adithyab/tiddlyjam/renderer/base . text/plain`
+**`- tiddlywiki --render '[all[tiddlers+shadows][$:/plugins/adithyab/tiddlyjam/renderer/sitemap]]' 'sitemap.xml' text/plain`
+* The `output` folder should contain the html files. It will be rendered using the default theme - the same one as [[https://tiddlyjam.com]]
+
+!! On Github
+* This is a bit more involved. Checkout how [[The TiddlyJam website|https://tiddlyjam.com]] is rendered using the [[repo|https://github.com/adithya-badidey/tiddlyjam]]. Will add more details soon.
