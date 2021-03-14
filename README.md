@@ -10,7 +10,7 @@ TiddlyJam is a CMS and website renderer for TiddlyWiki. Its aim is to render and
 
 ## Features
 - Content Management System(CMS)
-- Out of the box, beautifully renderer blog & website
+- Out of the box, beautifully rendered blog & website
 - Full support for custom pages
 - Uses TiddlyWiki's templating library
 - Extensible and modular
@@ -23,6 +23,7 @@ Visit https://tiddlyjam.com/tiddly for instructions
 ## Roadmap
 - [x] Basic Blog and Page renderer/exporter
 - [ ] Direct exporter via UI
+- [ ] Add full featured text editor from https://github.com/adithya-badidey/TW5-codemirror-plus
 - [ ] Support for media/images
 - [ ] More themes/plugins
 - [ ] Direct deploy of static website to Github Pages
@@ -32,9 +33,9 @@ For help/discussion, please join us on Github discusions: https://github.com/adi
 Please report bugs at https://github.com/adithya-badidey/tiddlyjam/issues 
 
 ## Thanks and Acknowledgements
-This has been possible due to the work of several people:
+This has been possible due to the previous work of numerous people. In particular:
 - Jeremy Ruston - the creator of TiddlyWiki
-- Mohammed - https://kookma.github.io/
+- Mohammad Rahmani - https://github.com/kookma
 - Anne-Laure Le Cunff - For their articles on https://nesslabs.com
 - Richard William Smith - for https://didaxy.com which formed the initial basis for this.
 - Everyone on the [TiddlyWiki Google Group](https://groups.google.com/g/tiddlywiki)
