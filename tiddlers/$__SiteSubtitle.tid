@@ -1,0 +1,6 @@
+created: 20210314004553258
+modified: 20210314004604239
+title: $:/SiteSubtitle
+type: text/vnd.tiddlywiki
+
+A static generator for <a href="https://tiddlywiki.com/">TiddlyWiki</a>. Inspired by <a href="https://jamstack.com">JamStack</a>

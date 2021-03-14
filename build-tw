@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# rm -rf ./output/*.*
+
+tiddlywiki –-build index
+mv output/index.html output/tiddly.html
+
+tiddlywiki --rendertiddlers '[all[tiddlers+shadows]tag[$:/plugins/adithyab/tiddlyjam/live]]'  $:/plugins/adithyab/tiddlyjam/renderer/base . text/plain
+echo "Rendered pages html"
+
+tiddlywiki --render '[all[tiddlers+shadows][$:/plugins/adithyab/tiddlyjam/renderer/sitemap]]' 'sitemap.xml' text/plain
+echo "Rendered sitemap.xml"
+
+

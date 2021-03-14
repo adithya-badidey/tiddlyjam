@@ -16,6 +16,8 @@ install:
 
 script:
   - tiddlywiki --–verbose --–build index
+  - tiddlywiki ---rendertiddlers '[all[tiddlers+shadows]tag[$:/plugins/adithyab/tiddlyjam/live]]'  $:/plugins/adithyab/tiddlyjam/renderer/base . text/plain
+
 
 deploy:
   provider: pages

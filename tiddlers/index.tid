@@ -1,0 +1,50 @@
+created: 20200728102956586
+creator: Adithya_
+description: A static generator for TiddlyWiki. Inspired by JamStack.
+modified: 20210314040111818
+modifier: Adithya_
+name: Homepage
+published: 20210314001527357
+tags: $:/plugins/adithyab/tiddlyjam/page $:/plugins/adithyab/tiddlyjam/internals $:/plugins/adithyab/tiddlyjam/live tiddlyjam.com
+title: index
+type: text/vnd.tiddlywiki
+
+<section class="section mt-6">
+  <div class="container">
+    <div class="column is-6-desktop is-offset-3-desktop is-8 is-offset-2">
+      <h1 class="title" style="font-size: 400%;">{{$:/SiteTitle}}</h1>
+      <div class="subtitle">
+        {{$:/SiteSubtitle}}
+      </div>
+      <span class="buttons">
+        <a class="button is-link" href="https://tiddlyjam.com/tiddly">
+          <span class="icon is-small">
+            <i class="fas fa-cloud-download-alt"></i>
+          </span>
+          <span>Install</span>
+        </a>
+        <a class="button" href="https://github.com/adithya-badidey/tiddlyjam">
+          <span class="icon is-small">
+            <i class="fab fa-github"></i>
+          </span>
+          <span>GitHub</span>
+        </a>
+        <a class="button" href="https://github.com/adithya-badidey/tiddlyjam/discussions">
+          <span class="icon is-small">
+            <i class="fas fa-comments"></i>
+          </span>
+          <span>Forum</span>
+        </a>
+      </span>
+    </div>
+  </div>
+  <div>
+    <div class="container mt-6">
+      <div class="column is-6-desktop is-offset-3-desktop is-8 is-offset-2">
+        <$list filter="[tag[$:/plugins/adithyab/tiddlyjam/live]tag[blog]!sort[published]limit[5]]">
+          {{||$:/plugins/adithyab/tiddlyjam/renderer/templates/blog_verbose}}
+        </$list>
+      </div>
+    </div>
+  </div>
+</section>
