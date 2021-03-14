@@ -1,9 +1,7 @@
 #!/bin/bash
 
-# rm -rf ./output/*.*
-
-tiddlywiki –-build index
-mv output/index.html output/tiddly.html
+# tiddlywiki --–verbose --–build index
+# mv output/index.html output/tiddly.html
 
 tiddlywiki --rendertiddlers '[all[tiddlers+shadows]tag[$:/plugins/adithyab/tiddlyjam/live]]'  $:/plugins/adithyab/tiddlyjam/renderer/base . text/plain
 echo "Rendered pages html"
