@@ -1,0 +1,19 @@
+created: 20200806180100109
+modified: 20210314010731109
+revision: 1
+tags: $:/plugins/adithyab/tiddlyjam/internals
+title: $:/plugins/adithyab/tiddlyjam/renderer/templates/blog_compact
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+
+      <div class="content is-medium">
+        <nav class="level is-mobile mb-0">
+          <!-- Left side -->
+          <div class="level-left">
+            <h2 class="has-text-grey subtitle mb-0 pr-2 is-6 tc-subtitle tc-created">
+              <<get_published_date>></h2>
+          </div>
+        </nav>
+        <h2 class="title is-4 mt-1"><$link>{{!!title}}</$link></h2>
+      </div>

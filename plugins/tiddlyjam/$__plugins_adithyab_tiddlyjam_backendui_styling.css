@@ -1,0 +1,19 @@
+.rowitem-modified {
+font-size: 90%;
+}
+.rowitem-name {
+margin-top:0;
+margin-left: 10px;
+margin-bottom:0;
+display: inline
+}
+.rowitem-description {
+margin-top:0;
+margin-bottom:0;
+}
+.rowitem-tags {
+margin-bottom: 5px
+}
+.rowitem-url {
+text-decoration: underline;
+}

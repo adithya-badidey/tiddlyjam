@@ -1,0 +1,11 @@
+caption: Blogs
+created: 20200911134845249
+modified: 20201117081744953
+revision: 0
+tags: $:/plugins/adithyab/tiddlyjam/backendui/dashboardTab $:/plugins/adithyab/tiddlyjam/backendui
+title: $:/plugins/adithyab/tiddlyjam/backendui/blogsTab
+type: text/vnd.tiddlywiki
+
+<h2>Blogs</h2>
+<$macrocall $name="category-list" tagname="blog"/>
+

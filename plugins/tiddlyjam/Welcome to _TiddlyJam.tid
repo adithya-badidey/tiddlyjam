@@ -1,0 +1,15 @@
+created: 20210324005947737
+modified: 20210324011223943
+tags: $:/plugins/adithyab/tiddlyjam/backendui
+title: Welcome to ~TiddlyJam
+type: text/vnd.tiddlywiki
+
+Before you start generating your website in ~TiddlyJam, please fill in the following details:
+
+<div class="tc-control-panel">
+
+|<$link to="$:/plugins/adithyab/tiddlyjam/renderer/title">Enter the title of your website</$link> |<$edit-text tiddler="$:/plugins/adithyab/tiddlyjam/renderer/title" default={{{$:/SiteTitle}}} tag="input"/> |
+|<$link to="$:/plugins/adithyab/tiddlyjam/renderer/subtitle">Enter the subtitle for your website</$link> |<$edit-text tiddler="$:/plugins/adithyab/tiddlyjam/renderer/subtitle" tag="input"/> |
+|<$link to="$:/plugins/adithyab/tiddlyjam/renderer/baseurl">Enter the root url for your website</$link> |<$edit-text tiddler="$:/plugins/adithyab/tiddlyjam/renderer/baseurl" tag="input"/> |
+
+</div>

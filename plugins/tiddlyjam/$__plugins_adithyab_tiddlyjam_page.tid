@@ -1,0 +1,9 @@
+created: 20200814161110754
+modified: 20210314160544552
+renderer: $:/plugins/adithyab/tiddlyjam/renderer/base/body
+revision: 1
+tags: $:/plugins/adithyab/tiddlyjam/internals $:/plugins/adithyab/tiddlyjam/category
+title: $:/plugins/adithyab/tiddlyjam/page
+type: text/vnd.tiddlywiki
+
+All this does is provide renderer to tiddlies tagged as $:/plugins/adithyab/tiddlyjam/page

@@ -1,0 +1,12 @@
+created: 20200728152009166
+creator: Adithya_
+modified: 20201117084105036
+modifier: Adithya_
+revision: 0
+tags: $:/plugins/adithyab/tiddlyjam/internals
+title: $:/plugins/adithyab/tiddlyjam/renderer/base/body
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]]">
+<$transclude />
+</$list>

@@ -1,0 +1,16 @@
+created: 20200728151702786
+creator: Adithya_
+modified: 20210314010153595
+modifier: Adithya_
+revision: 4
+tags: $:/plugins/adithyab/tiddlyjam/internals
+title: $:/plugins/adithyab/tiddlyjam/renderer/base/footer
+type: text/vnd.tiddlywiki
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        Made with <a href="https://tiddlyjam.com"><strong>TiddlyJam</strong></a> by <a href="https://adithyab.in">Adithya Badidey</a>
+      </p>
+    </div>
+  </footer>

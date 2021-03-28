@@ -1,0 +1,33 @@
+created: 20201018101028205
+creator: Adithya_
+modified: 20201117084231005
+modifier: Adithya_
+revision: 0
+tags: $:/plugins/adithyab/tiddlyjam/internals
+title: $:/plugins/adithyab/tiddlyjam/renderer/tags/body
+type: text/vnd.tiddlywiki
+
+{{$:/plugins/adithyab/tiddlyjam/renderer/base/header}}
+
+<section class="section">
+  <div class="content columns mt-6">
+    <div class="column is-5-fullhd is-6-desktop is-8-tablet is-offset-2">
+        <span class="has-text-grey-light is-small tc-subtitle tc-created">
+		   <<get_published_date>>
+		 </span>
+        <h1 class="tc-title mt-1">
+          <<get_display_name>>
+        </h1>
+				<div>
+				<$list filter="[all[current]]">
+					<$transclude />
+				</$list>
+				</div>
+				<hr/>
+				<$list filter="[all[current]tagging[]tag[blog]tag[$:/plugins/adithyab/tiddlyjam/live]!sort[published]]">
+					{{||$:/plugins/adithyab/tiddlyjam/renderer/templates/blog_verbose}}
+				</$list>
+		</div>
+  </div>
+</section>
+

@@ -1,0 +1,13 @@
+created: 20200910145814416
+modified: 20210314001522406
+revision: 1
+tags: $:/plugins/adithyab/tiddlyjam/backendui
+title: $:/plugins/adithyab/tiddlyjam/backendui/category/row/draft
+type: text/vnd.tiddlywiki
+
+<$fieldmangler>
+<$button message="tm-add-tag" param="$:/plugins/adithyab/tiddlyjam/live">
+<$action-setfield $field="published" $value=<<now [UTC]YYYY0MM0DD0hh0mm0ssXXX>> />
+Publish
+</$button>
+</$fieldmangler>

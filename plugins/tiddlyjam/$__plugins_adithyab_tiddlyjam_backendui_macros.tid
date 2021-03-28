@@ -1,0 +1,37 @@
+created: 20210313235841675
+modified: 20210314160544538
+revision: 1
+tags: $:/tags/Macro $:/plugins/adithyab/tiddlyjam/backendui
+title: $:/plugins/adithyab/tiddlyjam/backendui/macros
+type: text/vnd.tiddlywiki
+
+\define link_with_tags(modifier)
+<$link><$view field="title"/></$link>&nbsp;<$list filter="[all[current]tags[]sort[title]] $modifier$" template="$:/core/ui/TagTemplate"/>
+\end
+
+\define category-list(tagname)
+	<table>
+	<tr>
+	<th>Item</th>
+	<th>Status</th>
+	</tr>
+	{{{ [all[tiddlers+shadows]tag[$tagname$]!sort[modified]] || $:/plugins/adithyab/tiddlyjam/backendui/category/row }}}
+	</table>
+\end
+
+\define export-static-website()
+<$action-sendmessage $message="tm-zip-create" $param="$:/temp/_ZipTiddler"/>
+<$list filter="[tag[$:/plugins/adithyab/tiddlyjam/live]]">
+<$action-sendmessage $message="tm-zip-render-file" $param="$:/temp/_ZipTiddler" tiddler=<<currentTiddler>> template="$:/plugins/adithyab/tiddlyjam/renderer/base"/>
+</$list>
+<$action-sendmessage $message="tm-zip-download" $param="$:/temp/_ZipTiddler" filename="tiddlyjam.zip"/>
+\end
+
+\define export-static-website2()
+<$action-sendmessage $message="tm-zip-create" $param="$:/temp/_ZipTiddler"/>
+<$list filter="[tag[$:/plugins/adithyab/tiddlyjam/live]]">
+<$action-sendmessage $message="tm-zip-render-file" $param="$:/temp/_ZipTiddler" filename={{{ [<currentTiddler>encodeuricomponent[]addsuffix[.html]] }}} tiddler=<<currentTiddler>> template="$:/plugins/adithyab/tiddlyjam/renderer/base"/>
+</$list>
+<$action-sendmessage $message="tm-zip-render-file" $param="$:/temp/_ZipTiddler" filename="sitemap.xml" template="$:/plugins/adithyab/tiddlyjam/renderer/sitemap"/>
+<$action-sendmessage $message="tm-zip-download" $param="$:/temp/_ZipTiddler" filename="tiddlyjam.zip"/>
+\end

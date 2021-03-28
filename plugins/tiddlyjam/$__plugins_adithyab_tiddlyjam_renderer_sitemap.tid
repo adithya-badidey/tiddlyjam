@@ -1,0 +1,17 @@
+created: 20200913085259429
+modified: 20201117084124255
+revision: 0
+tags: $:/plugins/adithyab/tiddlyjam/internals
+title: $:/plugins/adithyab/tiddlyjam/renderer/sitemap
+type: text/vnd.tiddlywiki
+
+&lt;?xml version="1.0" encoding="UTF-8"?&gt; 
+&lt;urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"&gt;
+<$list filter="[tag[$:/plugins/adithyab/tiddlyjam/live]]">
+   &lt;url&gt;
+      &lt;loc&gt;<$text text={{$:/plugins/adithyab/tiddlyjam/renderer/baseurl}}/>/<$macrocall $name="tv-get-export-path" title={{!!title}}/>&lt;/loc&gt;
+      &lt;lastmod&gt;<$view field="modified" format="date" template="YYYY-0MM-0DD" />&lt;/lastmod&gt;
+      &lt;changefreq&gt;monthly&lt;/changefreq&gt;
+   &lt;/url&gt;
+</$list>
+&lt;/urlset&gt;

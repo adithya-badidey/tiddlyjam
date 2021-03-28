@@ -1,0 +1,43 @@
+created: 20200806162755767
+modified: 20210313235830114
+revision: 2
+tags: $:/plugins/adithyab/tiddlyjam/internals $:/tags/Macro
+title: $:/plugins/adithyab/tiddlyjam/renderer/macros
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+
+\define get_description()
+<!--
+\outline Gets the description by extracting the first paragraph (uses the newline operator) and then rendering it using Wikify
+--><$list filter="[all[current]get[description]]">{{!!title}}</$list><$list filter="[all[current]!has[description]]"><$vars lf="
+"><$list filter="[<currentTiddler>get[text]split<lf>trim[]!is[blank]limit[1]]" variable="thisline"><$wikify name="out" text=<<thisline>>}><<out>></$wikify></$list></$vars></$list>
+\end
+
+\define get_published_date()
+<$list filter="[{!!published}is[blank]then{!!created}else{!!published}]"><$view field="title" format="date" template="DDth MMM, YYYY" /></$list>
+\end
+
+\define get_title()
+<$text text={{{ [<currentTiddler>get[name]else<currentTiddler>] }}} /> ~ {{$:/SiteTitle}}
+\end
+
+\define get_display_name()
+<$text text={{{ [<currentTiddler>get[name]else<currentTiddler>] }}} />
+\end
+
+\define get_relative_url()
+/<$macrocall $name="tv-get-export-path" title={{!!title}}/>
+\end
+
+\define get_absolute_url()
+<$wikify name="url" text=<<get_relative_url>>><$text text={{{ [<url>addprefix{$:/plugins/adithyab/tiddlyjam/renderer/baseurl}] }}}/></$wikify>
+\end
+
+\define get_page_uniqueid()
+<$view field="created"/>
+\end
+
+\define tweet-this(url,title,description)
+<a href="https://twitter.com/intent/tweet?source=$url$&text=$title$%20$description$&via=anthilemoon" target="_blank" title="Tweet"><img alt="Tweet" src="social-icons/Twitter.png" /></a>
+\end

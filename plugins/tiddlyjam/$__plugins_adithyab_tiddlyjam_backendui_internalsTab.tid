@@ -1,0 +1,21 @@
+caption: Internals
+created: 20200910064621364
+modified: 20210314023514085
+revision: 0
+tags: $:/plugins/adithyab/tiddlyjam/backendui/dashboardTab $:/plugins/adithyab/tiddlyjam/backendui
+title: $:/plugins/adithyab/tiddlyjam/backendui/internalsTab
+type: text/vnd.tiddlywiki
+
+!!Renderers/Internals
+<ul>
+<$list  filter="[all[tiddlers+shadows]tag[$:/plugins/adithyab/tiddlyjam/internals]sort[]]">
+<li><<link_with_tags "-[[$:/plugins/adithyab/tiddlyjam/internals]] -[[$:/plugins/adithyab/tiddlyjam/live]]">></li>
+</$list>
+</ul>
+
+!!BackendUI
+<ul>
+<$list  filter="[all[shadows]tag[$:/plugins/adithyab/tiddlyjam/backendui]sort[]]">
+<li><<link_with_tags "-[[$:/plugins/adithyab/tiddlyjam/backendui]]">></li>
+</$list>
+</ul>

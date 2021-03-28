@@ -1,0 +1,9 @@
+created: 20201018144724086
+modified: 20210308004452637
+renderer: $:/plugins/adithyab/tiddlyjam/renderer/tags/body
+revision: 0
+tags: $:/plugins/adithyab/tiddlyjam/internals
+title: $:/plugins/adithyab/tiddlyjam/tag
+type: text/vnd.tiddlywiki
+
+All this does is provides the renderer for the $:/plugins/adithyab/tiddlyjam/tag tag

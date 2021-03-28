@@ -1,0 +1,26 @@
+created: 20200814062847162
+description: safe
+modified: 20210313234310937
+name: correct
+revision: 1
+tags: $:/plugins/adithyab/tiddlyjam/internals
+title: $:/plugins/adithyab/tiddlyjam/renderer/base/seotags
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+
+`<title>`<<get_title>>`</title>
+<meta name="description" content="`<<get_description>>`">
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="`<<get_absolute_url>>`" />
+<meta property="og:title" content="`<<get_title>>`" />
+<meta property="og:image" content="`<<get_image>>`" />
+<meta property="og:description" content="`<<get_description>>`" />
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@adithya_badidey">
+<meta name="twitter:creator" content="@adithya_badidey">
+<meta name="twitter:title" content="`<<get_title>>`" />
+<meta name="twitter:description" content="`<<get_description>>`" />
+<meta name="twitter:image" content="`<<get_image>>`" />

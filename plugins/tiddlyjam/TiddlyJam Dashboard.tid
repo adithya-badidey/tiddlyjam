@@ -1,0 +1,8 @@
+created: 20200910064736206
+modified: 20210314020714435
+revision: 7
+tags: $:/plugins/adithyab/tiddlyjam/backendui
+title: TiddlyJam Dashboard
+type: text/vnd.tiddlywiki
+
+<$macrocall $name="tabs" tabsList="[all[tiddlers+shadows]tag[$:/plugins/adithyab/tiddlyjam/backendui/dashboardTab]!sort[created]]" default="$:/plugins/adithyab/tiddlyjam/backendui/pagesTab"/>

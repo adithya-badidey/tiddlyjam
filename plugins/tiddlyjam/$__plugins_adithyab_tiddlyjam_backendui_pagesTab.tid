@@ -1,0 +1,11 @@
+caption: Pages
+created: 20200911135000707
+modified: 20201117083559368
+revision: 0
+tags: $:/plugins/adithyab/tiddlyjam/backendui/dashboardTab $:/plugins/adithyab/tiddlyjam/backendui
+title: $:/plugins/adithyab/tiddlyjam/backendui/pagesTab
+type: text/vnd.tiddlywiki
+
+<h2>Pages</h2>
+<$macrocall $name="category-list" tagname="$:/plugins/adithyab/tiddlyjam/page"/>
+

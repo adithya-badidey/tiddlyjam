@@ -1,0 +1,42 @@
+created: 20200910072557350
+modified: 20210314160544516
+name: test
+published: 20200910183847840
+revision: 1
+tags: $:/plugins/adithyab/tiddlyjam/backendui
+title: $:/plugins/adithyab/tiddlyjam/backendui/category/row
+type: text/vnd.tiddlywiki
+
+<tr>
+  <td>
+    <h3 class="rowitem-name">
+        <$link>
+          <<get_display_name>>
+        </$link>
+    </h3> - 
+    <span class="rowitem-modified">
+      <$view field="modified" format="date" template="DDth mmm YYYY" />
+    </span>
+    <p class="rowitem-description">
+        <<get_description>>
+    </p>
+    <div class="rowitem-tags">
+      <$list
+        filter="[all[current]tags[]sort[title]] -[all[tiddlers+shadows]tag[$:/plugins/adithyab/tiddlyjam/category]] -[[$:/plugins/adithyab/tiddlyjam/internals]] -[[$:/plugins/adithyab/tiddlyjam/live]]"
+        template="$:/core/ui/TagTemplate" />
+    </div>
+  </td>
+  <td>
+    <div class="rowitem-url">
+      <<get_relative_url>>
+    </div>
+    <div class="action">
+      <$list filter="[all[current]tag[$:/plugins/adithyab/tiddlyjam/live]]">
+        {{||$:/plugins/adithyab/tiddlyjam/backendui/category/row/published}}
+      </$list>
+      <$list filter="[all[current]!tag[$:/plugins/adithyab/tiddlyjam/live]]">
+        {{||$:/plugins/adithyab/tiddlyjam/backendui/category/row/draft}}
+      </$list>
+    </div>
+  </td>
+</tr>

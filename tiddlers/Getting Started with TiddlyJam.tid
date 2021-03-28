@@ -1,8 +1,12 @@
 created: 20210314161116928
-modified: 20210314170116239
+modified: 20210328162037917
 tags: blog
 title: Getting Started with TiddlyJam
 type: text/vnd.tiddlywiki
+
+<$link to="$:/themes/nico/notebook/LICENSE"><<shield label:License status:MIT>></$link>
+<$link to="$:/themes/nico/notebook"><<shield label:Release status:{{$:/plugins/adithyab/tiddlyjam!!version}} colour:purple>></$link>
+<a href="https://tiddlywiki.com"><<shield label:~TiddlyWiki status:5.1.22+ colour:blue>></a>
 
 For now only the nodejs installation of TiddlyWiki is supported. I will be adding support for other things soon. Checkout the github repo (https://github.com/adithya-badidey/tiddlyjam) for more details on future plans.
 

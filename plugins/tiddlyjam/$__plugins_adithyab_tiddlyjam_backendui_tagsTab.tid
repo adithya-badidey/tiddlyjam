@@ -1,0 +1,14 @@
+caption: Tags
+created: 20200910064549070
+modified: 20210308040405547
+revision: 0
+tags: $:/plugins/adithyab/tiddlyjam/backendui/dashboardTab $:/plugins/adithyab/tiddlyjam/backendui
+title: $:/plugins/adithyab/tiddlyjam/backendui/tagsTab
+type: text/vnd.tiddlywiki
+
+!!Tags
+<ul>
+<$list  filter="[tag[$:/plugins/adithyab/tiddlyjam/live]!tag[portfolio]tags[]] -[[$:/plugins/adithyab/tiddlyjam/internals]] -[[$:/adithyabin/customs]] -[tag[$:/plugins/adithyab/tiddlyjam/internals]] -[tag[$:/plugins/adithyab/tiddlyjam/backendui]] -[tag[$:/plugins/adithyab/tiddlyjam/live]]">
+<li><<link_with_tags "-[[$:/plugins/adithyab/tiddlyjam/internals]] -[[$:/plugins/adithyab/tiddlyjam/tag]]">></li>
+</$list>
+</ul>

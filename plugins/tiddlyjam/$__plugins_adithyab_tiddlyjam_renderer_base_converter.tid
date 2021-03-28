@@ -1,0 +1,10 @@
+created: 20200806154600383
+modified: 20210313233457224
+revision: 1
+tags: $:/plugins/adithyab/tiddlyjam/internals
+title: $:/plugins/adithyab/tiddlyjam/renderer/base/converter
+type: text/vnd.tiddlywiki
+
+<$list filter="[<currentTiddler>tags[]get[renderer]limit[1]else[$:/plugins/adithyab/tiddlyjam/renderer/blog/body]]" variable="listItem">
+<$transclude tiddler=<<listItem>>/>
+</$list>

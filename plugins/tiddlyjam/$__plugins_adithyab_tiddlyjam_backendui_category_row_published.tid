@@ -1,0 +1,14 @@
+created: 20200910145708380
+modified: 20210314011440586
+published: 20141212110330815
+revision: 1
+tags: $:/plugins/adithyab/tiddlyjam/backendui
+title: $:/plugins/adithyab/tiddlyjam/backendui/category/row/published
+type: text/vnd.tiddlywiki
+
+Published on <$view field="published" format="date" template="DDth mmm YYYY"/>.
+<$fieldmangler>
+<$button message="tm-remove-tag" param="$:/plugins/adithyab/tiddlyjam/live">
+X
+</$button>
+</$fieldmangler>

@@ -1,0 +1,52 @@
+created: 20200728141157165
+creator: Adithya_
+modified: 20210313233411818
+modifier: Adithya_
+revision: 1
+tags: $:/plugins/adithyab/tiddlyjam/internals
+title: $:/plugins/adithyab/tiddlyjam/renderer/base
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+\define tv-wikilink-template() $uri_doubleencoded$.html
+\define tv-config-toolbar-icons() no
+\define tv-config-toolbar-text() no
+\define tv-config-toolbar-class() tc-btn-invisible
+\import [[$:/core/ui/PageMacros]] [all[shadows+tiddlers]tag[$:/tags/Macro]!has[draft.of]]
+`
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+  <meta name="generator" content="TiddlyWiki" />
+  <meta name="tiddlywiki-version" content="`{{$:/core/templates/version}}`" />
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="mobile-web-app-capable" content="yes" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta name="format-detection" content="telephone=no">
+
+  <link id="faviconLink" rel="shortcut icon" href="/favicon.ico">
+
+`{{||$:/plugins/adithyab/tiddlyjam/renderer/base/seotags}}
+  {{$:/plugins/adithyab/tiddlyjam/renderer/base/imports}}
+  `
+</head>
+
+<body class="tc-body">
+  `
+  <$wikify name="output" text={{$:/plugins/adithyab/tiddlyjam/renderer/base/converter}} mode="inline" output="html">
+    <$text text=<<output>>/>
+  </$wikify>
+
+{{$:/plugins/adithyab/tiddlyjam/renderer/base/footer||$:/plugins/adithyab/tiddlyjam/htmlify}}
+	
+  `
+</body>
+</html>
+`
