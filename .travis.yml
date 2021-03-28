@@ -18,7 +18,7 @@ script:
   - tiddlywiki --–verbose --–build index
   # - mv ./output/index.html ./wiki.html
   # - mv ./output/index.html ./tiddly.html
-  - tiddlywiki ---build tiddlyjam
+  - tiddlywiki --build tiddlyjam
   # - mv ./tiddly.html ./output/tiddly.html
   - echo "tiddlyjam.com" > ./output/CNAME
 
