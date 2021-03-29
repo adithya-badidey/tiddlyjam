@@ -18,7 +18,7 @@ TiddlyJam is a CMS and website renderer for TiddlyWiki. Its aim is to render and
 - SEO ready
 
 ## How to use:
-Visit https://tiddlyjam.com/tiddly for instructions
+Visit https://tiddlyjam.com/wiki for instructions
 
 ## Roadmap
 - [x] Basic Blog and Page renderer/exporter
