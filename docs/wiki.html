@@ -183,6 +183,10 @@ Error message and password prompt
 
 <li>$:/plugins/nico/shields</li>
 
+<li>$:/plugins/nico/shields/shield</li>
+
+<li>$:/plugins/nico/shields/stylesheet</li>
+
 <li>$:/plugins/tiddlywiki/codemirror</li>
 
 <li>$:/plugins/tiddlywiki/highlight</li>
@@ -10118,10 +10122,11 @@ Error message and password prompt
 
 </pre>
 </div>
-<div created="20210328060752282" modified="20210328060752282" status="complete" title="$:/Import" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20210329233333086" modified="20210329233333086" status="complete" title="$:/Import" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>The following tiddlers were imported:
 
-# [[$:/plugins/adithyab/cmplus]]</pre>
+# [[$:/plugins/nico/shields/shield]]
+# [[$:/plugins/nico/shields/stylesheet]]</pre>
 </div>
 <div title="$:/isEncrypted" revision="0" bag="default">
 <pre>no</pre>
@@ -10720,6 +10725,52 @@ font-size: 150%
         }
     }
 }</pre>
+</div>
+<div created="20201215172057193" modified="20210329233333702" tags="$:/tags/Macro" title="$:/plugins/nico/shields/shield" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>\define shield(label,status,colour)
+\whitespace trim
+  &lt;div class=&quot;shield shield-$colour$&quot;&gt;
+    &lt;span class=&quot;shield-label&quot;&gt;$label$&lt;/span&gt;
+    &lt;span class=&quot;shield-status&quot;&gt;$status$&lt;/span&gt;
+  &lt;/div&gt;
+\end
+</pre>
+</div>
+<div created="20201215172003456" modified="20210329233333745" tags="$:/tags/Stylesheet" title="$:/plugins/nico/shields/stylesheet" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline
+.shield {
+  font-weight: normal;
+  display: inline-block;
+  color: white;
+  font-size: .8em;
+}
+
+.shield .shield-label {
+  background: #555;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding: 3px 6px;
+}
+
+.shield .shield-status {
+  background: #40ba12;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding: 3px 6px;
+}
+
+.shield.shield-purple .shield-status {
+  background: #923293;
+}
+
+.shield.shield-red .shield-status {
+  background: #cc5640;
+}
+
+.shield.shield-blue .shield-status {
+  background: #0e7fbf;
+}
+</pre>
 </div>
 <div created="20210327001622839" dependents="" description="CodeMirror editor" list="readme usage keyboard license" modified="20210328060207771" name="CodeMirror" plugin-type="plugin" title="$:/plugins/tiddlywiki/codemirror" type="application/json" version="5.1.23" revision="0" bag="default">
 <pre>{
@@ -11627,10 +11678,18 @@ font-size: 150%
     }
 }</pre>
 </div>
-<div created="20210314161116928" modified="20210328172303720" tags="blog" title="Getting Started with TiddlyJam" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;$link to=&quot;$:/themes/nico/notebook/LICENSE&quot;&gt;&lt;&lt;shield label:License status:MIT&gt;&gt;&lt;/$link&gt;
-&lt;$link to=&quot;$:/themes/nico/notebook&quot;&gt;&lt;&lt;shield label:Release status:{{$:/plugins/adithyab/tiddlyjam!!version}} colour:purple&gt;&gt;&lt;/$link&gt;
-&lt;a href=&quot;https://tiddlywiki.com&quot;&gt;&lt;&lt;shield label:~TiddlyWiki status:5.1.22+ colour:blue&gt;&gt;&lt;/a&gt;
+<div created="20210314161116928" modified="20210329233410906" tags="blog" title="Getting Started with TiddlyJam" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;div&gt;
+&lt;span&gt;
+&lt;&lt;shield label:~TiddlyWiki status:5.1.22+ colour:blue&gt;&gt;
+&lt;/span&gt;
+&lt;a href=&quot;https://tiddlyjam.com/wiki&quot; target=&quot;_blank&quot;&gt;
+&lt;&lt;shield label:Release status:{{$:/plugins/adithyab/tiddlyjam!!version}} colour:purple&gt;&gt;
+&lt;/a&gt;
+&lt;a href=&quot;https://github.com/adithya-badidey/tiddlyjam&quot; target=&quot;_blank&quot;&gt;
+&lt;&lt;shield label:Github status:tiddlyjam colour:yellow&gt;&gt;
+&lt;/a&gt;
+&lt;/div&gt;
 
 For now only the nodejs installation of TiddlyWiki is supported. I will be adding support for other things soon. Checkout the github repo (https://github.com/adithya-badidey/tiddlyjam) for more details on future plans.
 
@@ -11646,8 +11705,9 @@ For now only the nodejs installation of TiddlyWiki is supported. I will be addin
 !! On Github
 * This is a bit more involved. Checkout how [[The TiddlyJam website|https://tiddlyjam.com]] is rendered using the [[repo|https://github.com/adithya-badidey/tiddlyjam]]. Will add more details soon.</pre>
 </div>
-<div created="20200728102956586" creator="Adithya_" description="A static generator for TiddlyWiki. Inspired by JamStack." modified="20210314040111818" modifier="Adithya_" name="Homepage" published="20210314001527357" tags="$:/plugins/adithyab/tiddlyjam/page $:/plugins/adithyab/tiddlyjam/internals $:/plugins/adithyab/tiddlyjam/live tiddlyjam.com" title="index" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;section class=&quot;section mt-6&quot;&gt;
+<div created="20200728102956586" creator="Adithya_" description="A static generator for TiddlyWiki. Inspired by JamStack." modified="20210329234359160" modifier="Adithya_" name="Homepage" published="20210314001527357" tags="$:/plugins/adithyab/tiddlyjam/page $:/plugins/adithyab/tiddlyjam/internals $:/plugins/adithyab/tiddlyjam/live tiddlyjam.com" title="index" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>
+&lt;section class=&quot;section mt-6&quot;&gt;
   &lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;column is-6-desktop is-offset-3-desktop is-8 is-offset-2&quot;&gt;
       &lt;h1 class=&quot;title&quot; style=&quot;font-size: 400%;&quot;&gt;{{$:/SiteTitle}}&lt;/h1&gt;
@@ -11655,7 +11715,7 @@ For now only the nodejs installation of TiddlyWiki is supported. I will be addin
         {{$:/SiteSubtitle}}
       &lt;/div&gt;
       &lt;span class=&quot;buttons&quot;&gt;
-        &lt;a class=&quot;button is-link&quot; href=&quot;https://tiddlyjam.com/tiddly&quot;&gt;
+        &lt;a class=&quot;button is-link&quot; href=&quot;https://tiddlyjam.com/wiki&quot;&gt;
           &lt;span class=&quot;icon is-small&quot;&gt;
             &lt;i class=&quot;fas fa-cloud-download-alt&quot;&gt;&lt;/i&gt;
           &lt;/span&gt;
@@ -11674,6 +11734,15 @@ For now only the nodejs installation of TiddlyWiki is supported. I will be addin
           &lt;span&gt;Forum&lt;/span&gt;
         &lt;/a&gt;
       &lt;/span&gt;
+			&lt;div&gt;
+			&lt;div class=&quot;shield shield-blue&quot;&gt;
+            &lt;span&gt;&lt;span class=&quot;shield-label&quot;&gt;~TiddlyWiki&lt;/span&gt;&lt;span class=&quot;shield-status&quot;&gt;5.1.22+&lt;/span&gt;&lt;/span&gt;
+          &lt;/div&gt;&lt;a href=&quot;https://tiddlyjam.com/wiki&quot;
+               target=&quot;_blank&quot;&gt;
+          &lt;div class=&quot;shield shield-purple&quot;&gt;
+            &lt;span class=&quot;shield-label&quot;&gt;Release&lt;/span&gt;&lt;span class=&quot;shield-status&quot;&gt;0.1.0&lt;/span&gt;
+          &lt;/div&gt;&lt;/a&gt;
+			&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;div&gt;
@@ -11685,7 +11754,10 @@ For now only the nodejs installation of TiddlyWiki is supported. I will be addin
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-&lt;/section&gt;</pre>
+&lt;/section&gt;
+&lt;style&gt;
+{{$:/plugins/nico/shields/stylesheet}}
+&lt;/style&gt;</pre>
 </div>
 <div created="20210313202431663" modified="20210314040404629" published="20210314001542132" tags="blog $:/plugins/adithyab/tiddlyjam/live" title="Why TiddlyJam?" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>Why does this exist? Why did someone feel the need to make another static website generator?

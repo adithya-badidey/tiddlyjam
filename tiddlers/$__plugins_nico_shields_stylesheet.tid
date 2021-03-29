@@ -1,0 +1,39 @@
+created: 20201215172003456
+modified: 20210329233333745
+tags: $:/tags/Stylesheet
+title: $:/plugins/nico/shields/stylesheet
+type: text/vnd.tiddlywiki
+
+\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline
+.shield {
+  font-weight: normal;
+  display: inline-block;
+  color: white;
+  font-size: .8em;
+}
+
+.shield .shield-label {
+  background: #555;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding: 3px 6px;
+}
+
+.shield .shield-status {
+  background: #40ba12;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding: 3px 6px;
+}
+
+.shield.shield-purple .shield-status {
+  background: #923293;
+}
+
+.shield.shield-red .shield-status {
+  background: #cc5640;
+}
+
+.shield.shield-blue .shield-status {
+  background: #0e7fbf;
+}

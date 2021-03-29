@@ -9,3 +9,5 @@ mv ./output/index.html ./docs/wiki.html
 tiddlywiki --build tiddlyjam
 
 mv ./output/* ./docs/
+
+echo "tiddlyjam.com" > ./docs/CNAME

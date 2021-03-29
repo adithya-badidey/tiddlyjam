@@ -1,0 +1,13 @@
+created: 20201215172057193
+modified: 20210329233333702
+tags: $:/tags/Macro
+title: $:/plugins/nico/shields/shield
+type: text/vnd.tiddlywiki
+
+\define shield(label,status,colour)
+\whitespace trim
+  <div class="shield shield-$colour$">
+    <span class="shield-label">$label$</span>
+    <span class="shield-status">$status$</span>
+  </div>
+\end
