@@ -1,0 +1,12 @@
+author: Saq Imtiaz
+core-version: >=5.1.23
+created: 20210403050520847
+dependents: 
+description: Import binary files to the files folder on node.js
+list: 
+modified: 20210403050520847
+plugin-type: plugin
+source: 
+title: $:/plugins/sq/ImportToExternalFile
+type: application/json
+version: 0.3

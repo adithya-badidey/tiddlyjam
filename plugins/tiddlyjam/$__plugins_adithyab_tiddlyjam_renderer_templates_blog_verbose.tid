@@ -9,16 +9,21 @@ type: text/vnd.tiddlywiki
 \whitespace trim
 
 <div>
-          <div class="block">
-            <h2 class="title is-4"><$link>{{!!title}}</$link></h2>
-            <div class="subtitle is-7"><<get_published_date>></div>
-            <p><<get_description>></p>
-          </div>
-          <div class="block">
-<$link>
-            <button class="button is-link is-outlined" href="why-tiddlyjam">Read</button> 
-</$link>
-
-          </div>
-        </div>
-        <hr/>
+  <div class="block">
+    <h2 class="title is-4">
+      <$link>{{!!title}}</$link>
+    </h2>
+    <div class="subtitle is-6">
+      <<get_published_date>>
+    </div>
+    <p>
+      <<get_description>>
+    </p>
+  </div>
+  <div class="block">
+    <$link>
+      <button class="button is-link is-outlined">Read</button>
+    </$link>
+  </div>
+</div>
+<hr />

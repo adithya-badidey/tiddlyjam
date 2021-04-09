@@ -19,7 +19,7 @@ type: text/vnd.tiddlywiki
 \end
 
 \define get_title()
-<$text text={{{ [<currentTiddler>get[name]else<currentTiddler>] }}} /> ~ {{$:/SiteTitle}}
+<$text text={{{ [<currentTiddler>get[name]else<currentTiddler>] }}} /> ~ {{$:/plugins/adithyab/tiddlyjam/renderer/title}}
 \end
 
 \define get_display_name()
@@ -39,5 +39,5 @@ type: text/vnd.tiddlywiki
 \end
 
 \define tweet-this(url,title,description)
-<a href="https://twitter.com/intent/tweet?source=$url$&text=$title$%20$description$&via=anthilemoon" target="_blank" title="Tweet"><img alt="Tweet" src="social-icons/Twitter.png" /></a>
+<a href="https://twitter.com/intent/tweet?source=$url$&text=$title$%20$description$&via=adithyab" target="_blank" title="Tweet"><img alt="Tweet" src="social-icons/Twitter.png" /></a>
 \end
