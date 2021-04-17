@@ -1,13 +1,8 @@
 # TiddlyJam
 
 [![GitHub license](https://img.shields.io/github/license/adithya-badidey/tiddlyjam)](https://github.com/adithya-badidey/tiddlyjam/blob/master/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/adithya-badidey/tiddlyjam)](https://github.com/adithya-badidey/tiddlyjam/stargazers)
 
-TiddlyJam is a CMS and website renderer for TiddlyWiki. Its aim is to render and deploy full-featured, media-rich websites right from the wiki.
-
-## Example Websites:
-- https://tiddlyjam.com
-- https://adithyab.in
+TiddlyJam is a CMS and website renderer for TiddlyWiki. Its aim is to render and deploy full-featured, media-rich websites right from the wiki. Visit the website at https://tiddlyjam.com
 
 ## Features
 - Content Management System(CMS)
@@ -20,6 +15,10 @@ TiddlyJam is a CMS and website renderer for TiddlyWiki. Its aim is to render and
 
 ## How to use:
 Visit https://tiddlyjam.com/wiki for instructions
+
+## Example Websites:
+- https://tiddlyjam.com
+- https://adithyab.in
 
 ## Roadmap
 - [x] Basic Blog and Page renderer/exporter
