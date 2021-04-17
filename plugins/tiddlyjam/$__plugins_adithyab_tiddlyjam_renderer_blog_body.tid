@@ -13,7 +13,7 @@ type: text/vnd.tiddlywiki
             <div class="column is-6-desktop is-offset-3-desktop is-8 is-offset-2">
                 <div>
                     <div class="block">
-                        <a class="button is-link is-inverted" href="/">
+                        <a class="button is-link is-inverted" href="./">
                             <span><- Home</span>
                         </a>
                     </div>
