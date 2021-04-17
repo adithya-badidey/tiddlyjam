@@ -1,0 +1,25 @@
+created: 20210417175858434
+modified: 20210417212130825
+published: 20210417212130813
+tags: blog howto $:/plugins/adithyab/tiddlyjam/live
+title: Customizing your TiddlyJam Website
+type: text/vnd.tiddlywiki
+
+After installing the plugin from https://tiddlyjam.com/wiki, you can get started on customizing your website. Keep in mind that you will have to export to see the changes. 
+
+!! Publishing blogs
+*Just tag any tiddler as `blog` and it will become visible under the 'Blog' tab in the `TiddlyJam Dashboard`.
+*The tiddlers tagged 'blog' will be exported using the default 'blog' content template.
+*To publish the blog, click on its publish button. 
+**After you publish any blog, it will become visible the next time you build your website.
+
+!! Publishing pages
+*Just tag any tiddler as `$:/plugins/adithyab/tiddlyjam/page` and it will become visible under the 'Pages' tab in the `TiddlyJam Dashboard`.
+*The 'page' tag doesnt have a content template, so it will need some custom html work to get working properly.
+**See the `index` tiddler for reference on how a page is built.
+*To publish the page, click on its publish button. 
+**After you publish any page, it will become visible the next time you build your website.
+*''Request for comment'': Should I change the tag for pages from `$:/plugins/adithyab/tiddlyjam/page` to `page`? Comments here: https://github.com/adithya-badidey/tiddlyjam/discussions
+
+!! Customizing the theme
+TiddlyJam uses the pure CSS library [[Bulma|https://bulma.io/]] by default. The simplest way to customize the look and feel of your website is to download the css/sass from the Bulma website and customize it. Once you're done customizing, replace the `tiddlyjam.min.css` tiddler with your version.

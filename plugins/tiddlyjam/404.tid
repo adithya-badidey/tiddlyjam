@@ -12,8 +12,8 @@ type: text/vnd.tiddlywiki
     <div class="container">
         <div class="column is-6-desktop is-offset-3-desktop is-8 is-offset-2">
             <h1 class="title" style="font-size: 400%;">Page not found</h1>
-<div class="subtitle">
-                <a href="./">Back home?</a>
+            <div>
+                <a href={{$:/plugins/adithyab/tiddlyjam/renderer/baseurl}}>Back home?</a>
             </div>
         </div>
     </div>

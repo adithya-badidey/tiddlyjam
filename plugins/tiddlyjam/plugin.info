@@ -2,11 +2,11 @@
     "title": "$:/plugins/adithyab/tiddlyjam",
     "created": "20210306160051062",
     "dependents": "",
-    "description": "A static website generator for Tiddlywiki",
+    "description": "A CMS & static website generator for Tiddlywiki",
     "modified": "20210314160827375",
     "name": "TiddlyJam",
     "plugin-type": "plugin",
-    "version": "0.1.2",
+    "version": "0.2.0",
     "revision": "0",
     "bag": "default"
 }

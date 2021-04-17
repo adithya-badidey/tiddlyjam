@@ -15,7 +15,7 @@ type: text/vnd.tiddlywiki
 	<th>Item</th>
 	<th>Status</th>
 	</tr>
-	{{{ [all[tiddlers+shadows]tag[$tagname$]!sort[modified]] || $:/plugins/adithyab/tiddlyjam/backendui/category/row }}}
+	{{{ [all[tiddlers+shadows]tag[$tagname$]!sort[modified]!has[draft.of]] || $:/plugins/adithyab/tiddlyjam/backendui/category/row }}}
 	</table>
 \end
 

@@ -1,31 +1,23 @@
 created: 20210314161116928
-modified: 20210329233410906
-tags: blog
+modified: 20210417213517665
+published: 20210417212127611
+tags: blog howto $:/plugins/adithyab/tiddlyjam/live
 title: Getting Started with TiddlyJam
 type: text/vnd.tiddlywiki
 
-<div>
-<span>
-<<shield label:~TiddlyWiki status:5.1.22+ colour:blue>>
-</span>
-<a href="https://tiddlyjam.com/wiki" target="_blank">
-<<shield label:Release status:{{$:/plugins/adithyab/tiddlyjam!!version}} colour:purple>>
-</a>
-<a href="https://github.com/adithya-badidey/tiddlyjam" target="_blank">
-<<shield label:Github status:tiddlyjam colour:yellow>>
-</a>
-</div>
+TiddlyJam is designed to make it easy to export a simple blog from TW5 while providing the tools to make very complex websites.
 
-For now only the nodejs installation of TiddlyWiki is supported. I will be adding support for other things soon. Checkout the github repo (https://github.com/adithya-badidey/tiddlyjam) for more details on future plans.
-
-!! on NodeJs
-* Make sure TiddlyWiki is installed and upgraded to the latest version as instructed by https://tiddlywiki.com/#GettingStarted%20-%20Node.js.
+!! How to setup
+* Make sure TiddlyWiki on NodeJS is installed and upgraded to the latest version as instructed by https://tiddlywiki.com/#GettingStarted%20-%20Node.js.
 ** `tiddlywiki --version` should print `5.1.23`
-* Open your wiki in the browser and drag and drop this plugin [[$:/plugins/adithyab/tiddlyjam]] to import it
-* Open the folder containing the wiki:
+** TiddlyJam needs the nodejs installation of TiddlyWiki to work properly (for now). Checkout the github repo (https://github.com/adithya-badidey/tiddlyjam) for more details on future plans.
+* Open the local folder containing the wiki in file explorer:
 **Replace your `tiddlywiki.info` file with the one here: https://github.com/adithya-badidey/tiddlyjam/blob/master/tiddlywiki.info
-**Open the command line and run: `tiddlywiki ---build tiddlyjam`
-* The `output` folder should contain the html files. It will be rendered using the default theme - the same one as [[https://tiddlyjam.com]]
+*Open your wiki in the browser and import the plugin from https://tiddlyjam.com/wiki (you can drag and drop it into your wiki)
+**In your wiki, `TiddlyJam Dashboard` should be now available to manage your website.
 
-!! On Github
-* This is a bit more involved. Checkout how [[The TiddlyJam website|https://tiddlyjam.com]] is rendered using the [[repo|https://github.com/adithya-badidey/tiddlyjam]]. Will add more details soon.
+!! How to Export
+*Open the command line, navigate to the local folder of your TW5 and run: `tiddlywiki --build tiddlyjam`
+* The `output` folder should contain the html files. It will be rendered using the default theme - the same one as [[https://tiddlyjam.com]]
+** This folder can be hosted on your hosting service and viola - the website is ready.
+** ''Note'': Checkout tiddlyjam.com's [[build process|https://github.com/adithya-badidey/tiddlyjam/blob/master/build-tw]] for inspiration.

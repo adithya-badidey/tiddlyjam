@@ -1,0 +1,39 @@
+created: 20210417202142352
+modified: 20210417212721734
+tags: 
+title: ~TiddlyJam
+type: text/vnd.tiddlywiki
+
+<div>
+<span>
+<<shield label:~TiddlyWiki status:5.1.22+ colour:blue>>
+</span>
+<a href="https://tiddlyjam.com/wiki" target="_blank">
+<<shield label:Release status:{{$:/plugins/adithyab/tiddlyjam!!version}} colour:purple>>
+</a>
+<a href="https://github.com/adithya-badidey/tiddlyjam" target="_blank">
+<<shield label:GitHub status:tiddlyjam colour:yellow>>
+</a>
+</div>
+
+Transform your TiddlyWiki into static websites and blogs. Inspired by JamStack
+
+!! The Plugin
+<$list filter="[[$:/plugins/adithyab/tiddlyjam]]">
+<$set name="plugin-type" value={{!!plugin-type}}>
+<$set name="default-popup-state" value="no">
+<$set name="qualified-state" value=<<qualify "$:/state/plugin-info">>>
+{{||$:/core/ui/Components/plugin-info}}
+</$set>
+</$set>
+</$set>
+</$list>
+
+
+!! How-Tos
+<ul>
+<$list filter="[tag[howto]sort[published]]">
+<li><h3><$link/></h3></li>
+<dl><<get_description>></dl>
+</$list>
+</ul>

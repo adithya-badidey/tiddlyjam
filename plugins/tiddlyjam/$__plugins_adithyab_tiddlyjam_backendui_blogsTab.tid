@@ -1,4 +1,4 @@
-caption: Blogs
+caption: Blogs (<$count filter="[all[tiddlers+shadows]tag[blog]!has[draft.of]]"/>)
 created: 20200911134845249
 modified: 20201117081744953
 revision: 0

@@ -1,0 +1,99 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+  <meta name="generator" content="TiddlyWiki" />
+  <meta name="tiddlywiki-version" content="5.1.23" />
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="mobile-web-app-capable" content="yes" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta name="format-detection" content="telephone=no">
+
+  <link id="faviconLink" rel="shortcut icon" href="/favicon.ico">
+
+<title>Getting Started with TiddlyJam ~ </title>
+<meta name="description" content="TiddlyJam is designed to make it easy to export a simple blog from TW5 while providing the tools to make very complex websites.">
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content=".//getting-started-with-tiddlyjam" />
+<meta property="og:title" content="Getting Started with TiddlyJam ~ " />
+<meta property="og:image" content="" />
+<meta property="og:description" content="TiddlyJam is designed to make it easy to export a simple blog from TW5 while providing the tools to make very complex websites." />
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@adithya_badidey">
+<meta name="twitter:creator" content="@adithya_badidey">
+<meta name="twitter:title" content="Getting Started with TiddlyJam ~ " />
+<meta name="twitter:description" content="TiddlyJam is designed to make it easy to export a simple blog from TW5 while providing the tools to make very complex websites." />
+<meta name="twitter:image" content="" />
+<link rel="stylesheet" href="./css/tiddlyjam.min.css"/>
+<script async src="https://kit.fontawesome.com/f8d8f6a864.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="tc-body">
+  
+<nav aria-label="main navigation" class="navbar" role="navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="./" style="font-weight: 700;">
+        TiddlyJam
+            </a>
+        </div>
+    </nav>
+
+<style>
+.blog p:first-of-type {
+font-size: 120%;
+font-style: italic;
+}
+</style>
+
+<section class="section">
+        <div class="container">
+            <div class="column is-6-desktop is-offset-3-desktop is-8 is-offset-2">
+                <div>
+                    <div class="block">
+                        <a class="button is-link is-inverted" href="./">
+                            <span class="icon">
+                <i class="fas fa-chevron-circle-left"></i>
+              </span>
+                            <span>Home</span>
+                        </a>
+                    </div>
+                    <div class="block content blog">
+                     <h2 class="title is-3">Getting Started with TiddlyJam</h2>
+                        <div class="subtitle is-6">17th April, 2021</div>
+                <p>TiddlyJam is designed to make it easy to export a simple blog from TW5 while providing the tools to make very complex websites.</p><h2 class="">How to setup</h2><ul><li>Make sure TiddlyWiki on NodeJS is installed and upgraded to the latest version as instructed by <a class="tc-tiddlylink-external" href="https://tiddlywiki.com/#GettingStarted%20-%20Node.js" rel="noopener noreferrer" target="_blank">https://tiddlywiki.com/#GettingStarted%20-%20Node.js</a>.<ul><li><code>tiddlywiki --version</code> should print <code>5.1.23</code></li><li>TiddlyJam needs the nodejs installation of TiddlyWiki to work properly (for now). Checkout the github repo (<a class="tc-tiddlylink-external" href="https://github.com/adithya-badidey/tiddlyjam" rel="noopener noreferrer" target="_blank">https://github.com/adithya-badidey/tiddlyjam</a>) for more details on future plans.</li></ul></li><li>Open the local folder containing the wiki in file explorer:<ul><li>Replace your <code>tiddlywiki.info</code> file with the one here: <a class="tc-tiddlylink-external" href="https://github.com/adithya-badidey/tiddlyjam/blob/master/tiddlywiki.info" rel="noopener noreferrer" target="_blank">https://github.com/adithya-badidey/tiddlyjam/blob/master/tiddlywiki.info</a></li></ul></li><li>Open your wiki in the browser and import the plugin from <a class="tc-tiddlylink-external" href="https://tiddlyjam.com/wiki" rel="noopener noreferrer" target="_blank">https://tiddlyjam.com/wiki</a> (you can drag and drop it into your wiki)<ul><li>In your wiki, <code>TiddlyJam Dashboard</code> should be now available to manage your website.</li></ul></li></ul><h2 class="">How to Export</h2><ul><li>Open the command line, navigate to the local folder of your TW5 and run: <code>tiddlywiki --build tiddlyjam</code></li><li>The <code>output</code> folder should contain the html files. It will be rendered using the default theme - the same one as <a class="tc-tiddlylink-external" href="https://tiddlyjam.com" rel="noopener noreferrer" target="_blank">https://tiddlyjam.com</a><ul><li>This folder can be hosted on your hosting service and viola - the website is ready.</li><li><strong>Note</strong>: Checkout tiddlyjam.com's <a class="tc-tiddlylink-external" href="https://github.com/adithya-badidey/tiddlyjam/blob/master/build-tw" rel="noopener noreferrer" target="_blank">build process</a> for inspiration.</li></ul></li></ul>
+</div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </section>
+
+<style>
+.tc-blog p:first-of-type {
+font-size: 150%
+</style>
+
+<footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        This website is rendered using <strong>TiddlyJam</strong> by <a href="https://adithyab.in">Adithya Badidey</a>.
+</p>
+<p>
+The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

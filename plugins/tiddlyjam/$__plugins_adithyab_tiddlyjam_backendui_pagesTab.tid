@@ -1,4 +1,4 @@
-caption: Pages
+caption: Pages (<$count filter="[all[tiddlers+shadows]tag[$:/plugins/adithyab/tiddlyjam/page]!has[draft.of]]"/>)
 created: 20200911135000707
 modified: 20201117083559368
 revision: 0

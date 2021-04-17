@@ -2,14 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
    <url>
-      <loc>https://tiddlyjam.com/why-tiddlyjam</loc>
-      <lastmod>2021-03-14</lastmod>
+      <loc>.//customizing-your-tiddlyjam-website</loc>
+      <lastmod>2021-04-17</lastmod>
       <changefreq>monthly</changefreq>
    </url>
 
    <url>
-      <loc>https://tiddlyjam.com/index</loc>
-      <lastmod>2021-03-30</lastmod>
+      <loc>.//getting-started-with-tiddlyjam</loc>
+      <lastmod>2021-04-17</lastmod>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>.//why-tiddlyjam</loc>
+      <lastmod>2021-03-13</lastmod>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>.//index</loc>
+      <lastmod>2021-04-17</lastmod>
       <changefreq>monthly</changefreq>
    </url>
 

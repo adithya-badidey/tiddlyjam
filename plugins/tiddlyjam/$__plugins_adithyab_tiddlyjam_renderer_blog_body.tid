@@ -13,8 +13,8 @@ type: text/vnd.tiddlywiki
             <div class="column is-6-desktop is-offset-3-desktop is-8 is-offset-2">
                 <div>
                     <div class="block">
-                        <a class="button is-link is-inverted" href="./">
-                            <span><- Home</span>
+                        <a class="button is-link is-inverted" href={{$:/plugins/adithyab/tiddlyjam/renderer/baseurl}}>
+                            <span>&lt- Home </span>
                         </a>
                     </div>
                     <div class="block content">
