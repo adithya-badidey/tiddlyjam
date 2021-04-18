@@ -10243,7 +10243,7 @@ Transform your TiddlyWiki into static websites and blogs. Inspired by JamStack
     }
 }</pre>
 </div>
-<div created="20210306160051062" dependents="" description="A CMS &amp; static website generator for Tiddlywiki" modified="20210314160827375" name="TiddlyJam" plugin-type="plugin" title="$:/plugins/adithyab/tiddlyjam" type="application/json" version="0.2.0" revision="0" bag="default">
+<div created="20210306160051062" dependents="" description="A CMS and website renderer for TiddlyWiki." modified="20210314160827375" name="TiddlyJam" plugin-type="plugin" title="$:/plugins/adithyab/tiddlyjam" type="application/json" version="0.2.1" revision="0" bag="default">
 <pre>{
     &quot;tiddlers&quot;: {
         &quot;404&quot;: {
@@ -10448,11 +10448,11 @@ Transform your TiddlyWiki into static websites and blogs. Inspired by JamStack
         &quot;$:/plugins/adithyab/tiddlyjam/renderer/base/imports&quot;: {
             &quot;title&quot;: &quot;$:/plugins/adithyab/tiddlyjam/renderer/base/imports&quot;,
             &quot;created&quot;: &quot;20200805054051611&quot;,
-            &quot;modified&quot;: &quot;20210314004843841&quot;,
+            &quot;modified&quot;: &quot;20210418020622319&quot;,
             &quot;revision&quot;: &quot;3&quot;,
             &quot;tags&quot;: &quot;$:/plugins/adithyab/tiddlyjam/internals&quot;,
             &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;`\n&lt;link rel=\&quot;stylesheet\&quot; href=\&quot;./css/tiddlyjam.min.css\&quot;/&gt;\n`&quot;
+            &quot;text&quot;: &quot;&lt;$list filter=\&quot;[all[tiddler+shadows]tag[$:/plugins/adithyab/tiddlyjam/css]]\&quot;&gt;\n`&lt;link rel=\&quot;stylesheet\&quot; href=\&quot;./css/`{{!!title}}`\&quot;/&gt;`\n&lt;/$list&gt;&quot;
         },
         &quot;$:/plugins/adithyab/tiddlyjam/renderer/base/seotags&quot;: {
             &quot;title&quot;: &quot;$:/plugins/adithyab/tiddlyjam/renderer/base/seotags&quot;,
@@ -10676,9 +10676,11 @@ The source code is licensed
         &lt;/div&gt;
     &lt;/nav&gt;</pre>
 </div>
-<div created="20200805054051611" modified="20210417192050092" tags="$:/plugins/adithyab/tiddlyjam/internals tiddlyjam.com" title="$:/plugins/adithyab/tiddlyjam/renderer/base/imports" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>`&lt;link rel=&quot;stylesheet&quot; href=&quot;./css/tiddlyjam.min.css&quot;/&gt;
-&lt;script async src=&quot;https://kit.fontawesome.com/f8d8f6a864.js&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;`</pre>
+<div created="20200805054051611" modified="20210418020622319" tags="$:/plugins/adithyab/tiddlyjam/internals tiddlyjam.com" title="$:/plugins/adithyab/tiddlyjam/renderer/base/imports" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;$list filter=&quot;[all[tiddler+shadows]tag[$:/plugins/adithyab/tiddlyjam/css]]&quot;&gt;
+`&lt;link rel=&quot;stylesheet&quot; href=&quot;./css/`{{!!title}}`&quot;/&gt;`
+&lt;/$list&gt;
+`&lt;script async src=&quot;https://kit.fontawesome.com/f8d8f6a864.js&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;`</pre>
 </div>
 <div created="20200806142756352" creator="Adithya_" modified="20210328170534778" modifier="Adithya_" tags="$:/plugins/adithyab/tiddlyjam/internals" title="$:/plugins/adithyab/tiddlyjam/renderer/blog/body" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>{{$:/plugins/adithyab/tiddlyjam/renderer/base/header}}
