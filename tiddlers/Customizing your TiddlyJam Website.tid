@@ -1,5 +1,5 @@
 created: 20210417175858434
-modified: 20210417212130825
+modified: 20210418021337647
 published: 20210417212130813
 tags: blog howto $:/plugins/adithyab/tiddlyjam/live
 title: Customizing your TiddlyJam Website
@@ -23,3 +23,5 @@ After installing the plugin from https://tiddlyjam.com/wiki, you can get started
 
 !! Customizing the theme
 TiddlyJam uses the pure CSS library [[Bulma|https://bulma.io/]] by default. The simplest way to customize the look and feel of your website is to download the css/sass from the Bulma website and customize it. Once you're done customizing, replace the `tiddlyjam.min.css` tiddler with your version.
+
+Additionally, any css files that are tagged `$:/plugins/adithyab/tiddlyjam/css` will be automatically exported and linked in the header of the exported static html.
