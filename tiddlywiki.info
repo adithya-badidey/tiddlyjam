@@ -46,6 +46,10 @@
             "sitemap.xml",
             "text/plain",
             "--render",
+            "[all[tiddlers+shadows][$:/plugins/adithyab/tiddlyjam/renderer/rss]]",
+            "rss.xml",
+            "text/plain",
+            "--render",
             "[all[tiddlers+shadows]tag[$:/plugins/adithyab/tiddlyjam/css]]",
             "[encodeuricomponent[]addprefix[css/]]",
             "text/plain"
