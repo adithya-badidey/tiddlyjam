@@ -9,16 +9,16 @@ type: text/vnd.tiddlywiki
 &lt;rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"&gt;
 &lt;channel&gt;
 
-   &lt;title&gt;Example Feed&lt;/title&gt;
-   &lt;link&gt;<$text text={{$:/plugins/adithyab/tiddlyjam/renderer/baseurl}}/>&lt;/link&gt;
-   &lt;atom:link href="<$text text={{$:/plugins/adithyab/tiddlyjam/renderer/baseurl}}/>/rss.xml" rel="self" type="application/rss+xml" /&gt;
-   &lt;description&gt;Insert witty or insightful remark here&lt;/description&gt;
+   &lt;title&gt;{{$:/SiteTitle}}&lt;/title&gt;
+   &lt;link&gt;<$text text={{$:/AbsoluteBaseUrl}}/>&lt;/link&gt;
+   &lt;atom:link href="<$text text={{$:/AbsoluteBaseUrl}}/>/rss.xml" rel="self" type="application/rss+xml" /&gt;
+   &lt;description&gt;{{$:/SiteSubtitle}}&lt;/description&gt;
 
 <$list filter="[tag[$:/plugins/adithyab/tiddlyjam/live]]">
    &lt;item&gt;
       &lt;title&gt;{{!!title}}&lt;/title&gt;
-      &lt;link&gt;<$text text={{$:/plugins/adithyab/tiddlyjam/renderer/baseurl}}/>/<$macrocall $name="tv-get-export-path" title={{!!title}}/>&lt;/link&gt;
-      &lt;guid&gt;<$text text={{$:/plugins/adithyab/tiddlyjam/renderer/baseurl}}/>/<$macrocall $name="tv-get-export-path" title={{!!title}}/>&lt;/guid&gt;
+      &lt;link&gt;<$text text={{$:/AbsoluteBaseUrl}}/>/<$macrocall $name="tv-get-export-path" title={{!!title}}/>&lt;/link&gt;
+      &lt;guid&gt;<$text text={{$:/AbsoluteBaseUrl}}/>/<$macrocall $name="tv-get-export-path" title={{!!title}}/>&lt;/guid&gt;
    &lt;/item&gt;
 </$list>
 &lt;/channel&gt;
