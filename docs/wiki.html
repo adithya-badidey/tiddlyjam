@@ -284,7 +284,7 @@ Transform your TiddlyWiki into static websites and blogs. Inspired by JamStack
 </pre>
 </div>
 <div created="20210313235700661" modified="20210313235711907" title="$:/AbsoluteBaseUrl" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>https://tiddlyJam.com</pre>
+<pre>https://tiddlyjam.com</pre>
 </div>
 <div created="20210328060812366" modified="20210328060812408" title="$:/config/codemirror/theme" type="string" revision="0" bag="default">
 <pre>cmplus</pre>
@@ -11907,26 +11907,31 @@ This adds a hook for the &quot;th-importing-tiddler&quot;
 }</pre>
 </div>
 <div created="20210417175858434" modified="20210418021337647" published="20210417212130813" tags="blog howto $:/plugins/adithyab/tiddlyjam/live" title="Customizing your TiddlyJam Website" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>After installing the plugin from https://tiddlyjam.com/wiki, you can get started on customizing your website. Keep in mind that you will have to export to see the changes. 
+<pre>After installing the plugin from https://tiddlyjam.com/wiki, you can get started on customizing your website. Keep in mind that you will have to export to see the changes.
 
 !! Publishing blogs
 *Just tag any tiddler as `blog` and it will become visible under the 'Blog' tab in the `TiddlyJam Dashboard`.
 *The tiddlers tagged 'blog' will be exported using the default 'blog' content template.
-*To publish the blog, click on its publish button. 
+*To publish the blog, click on its publish button.
 **After you publish any blog, it will become visible the next time you build your website.
 
 !! Publishing pages
 *Just tag any tiddler as `$:/plugins/adithyab/tiddlyjam/page` and it will become visible under the 'Pages' tab in the `TiddlyJam Dashboard`.
 *The 'page' tag doesnt have a content template, so it will need some custom html work to get working properly.
 **See the `index` tiddler for reference on how a page is built.
-*To publish the page, click on its publish button. 
+*To publish the page, click on its publish button.
 **After you publish any page, it will become visible the next time you build your website.
 *''Request for comment'': Should I change the tag for pages from `$:/plugins/adithyab/tiddlyjam/page` to `page`? Comments here: https://github.com/adithya-badidey/tiddlyjam/discussions
 
 !! Customizing the theme
 TiddlyJam uses the pure CSS library [[Bulma|https://bulma.io/]] by default. The simplest way to customize the look and feel of your website is to download the css/sass from the Bulma website and customize it. Once you're done customizing, replace the `tiddlyjam.min.css` tiddler with your version.
 
-Additionally, any css files that are tagged `$:/plugins/adithyab/tiddlyjam/css` will be automatically exported and linked in the header of the exported static html.</pre>
+Additionally, any css files that are tagged `$:/plugins/adithyab/tiddlyjam/css` will be automatically exported and linked in the header of the exported static html.
+
+!! Setting your absolute baseurl with domain
+TiddlyJam has support RSS 2.0, it need full URL with domain. Just create a tiddler `$:/AbsoluteBaseUrl`.
+
+</pre>
 </div>
 <div created="20210314161116928" modified="20210417213517665" published="20210417212127611" tags="blog howto $:/plugins/adithyab/tiddlyjam/live" title="Getting Started with TiddlyJam" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>TiddlyJam is designed to make it easy to export a simple blog from TW5 while providing the tools to make very complex websites.

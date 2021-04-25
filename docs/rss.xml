@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel><title>TiddlyJam</title>
-   <link>https://tiddlyJam.com</link>
-   <atom:link href="https://tiddlyJam.com/rss.xml" rel="self" type="application/rss+xml" />
+   <link>https://tiddlyjam.com</link>
+   <atom:link href="https://tiddlyjam.com/rss.xml" rel="self" type="application/rss+xml" />
    <description>Transform your  TiddlyWiki into static websites and blogs. Inspired by JamStack</description>
    <item>
       <title>Customizing your TiddlyJam Website</title>
-      <link>https://tiddlyJam.com/customizing-your-tiddlyjam-website</link>
-      <guid>https://tiddlyJam.com/customizing-your-tiddlyjam-website</guid>
+      <link>https://tiddlyjam.com/customizing-your-tiddlyjam-website</link>
+      <guid>https://tiddlyjam.com/customizing-your-tiddlyjam-website</guid>
    </item>
 
    <item>
       <title>Getting Started with TiddlyJam</title>
-      <link>https://tiddlyJam.com/getting-started-with-tiddlyjam</link>
-      <guid>https://tiddlyJam.com/getting-started-with-tiddlyjam</guid>
+      <link>https://tiddlyjam.com/getting-started-with-tiddlyjam</link>
+      <guid>https://tiddlyjam.com/getting-started-with-tiddlyjam</guid>
    </item>
 
    <item>
       <title>Why TiddlyJam?</title>
-      <link>https://tiddlyJam.com/why-tiddlyjam</link>
-      <guid>https://tiddlyJam.com/why-tiddlyjam</guid>
+      <link>https://tiddlyjam.com/why-tiddlyjam</link>
+      <guid>https://tiddlyjam.com/why-tiddlyjam</guid>
    </item>
 
    <item>
       <title>index</title>
-      <link>https://tiddlyJam.com/index</link>
-      <guid>https://tiddlyJam.com/index</guid>
+      <link>https://tiddlyjam.com/index</link>
+      <guid>https://tiddlyjam.com/index</guid>
    </item>
 
 </channel>
