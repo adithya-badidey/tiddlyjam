@@ -5,18 +5,6 @@
    <atom:link href="https://tiddlyjam.com/rss.xml" rel="self" type="application/rss+xml" />
    <description>Transform your  TiddlyWiki into static websites and blogs. Inspired by JamStack</description>
    <item>
-      <title>Customizing your TiddlyJam Website</title>
-      <link>https://tiddlyjam.com/customizing-your-tiddlyjam-website</link>
-      <guid>https://tiddlyjam.com/customizing-your-tiddlyjam-website</guid>
-   </item>
-
-   <item>
-      <title>Getting Started with TiddlyJam</title>
-      <link>https://tiddlyjam.com/getting-started-with-tiddlyjam</link>
-      <guid>https://tiddlyjam.com/getting-started-with-tiddlyjam</guid>
-   </item>
-
-   <item>
       <title>Why TiddlyJam?</title>
       <link>https://tiddlyjam.com/why-tiddlyjam</link>
       <guid>https://tiddlyjam.com/why-tiddlyjam</guid>
@@ -26,6 +14,18 @@
       <title>index</title>
       <link>https://tiddlyjam.com/index</link>
       <guid>https://tiddlyjam.com/index</guid>
+   </item>
+
+   <item>
+      <title>Getting Started with TiddlyJam</title>
+      <link>https://tiddlyjam.com/getting-started-with-tiddlyjam</link>
+      <guid>https://tiddlyjam.com/getting-started-with-tiddlyjam</guid>
+   </item>
+
+   <item>
+      <title>Customizing your TiddlyJam Website</title>
+      <link>https://tiddlyjam.com/customizing-your-tiddlyjam-website</link>
+      <guid>https://tiddlyjam.com/customizing-your-tiddlyjam-website</guid>
    </item>
 
 </channel>

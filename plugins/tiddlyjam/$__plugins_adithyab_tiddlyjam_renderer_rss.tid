@@ -14,7 +14,7 @@ type: text/vnd.tiddlywiki
    &lt;atom:link href="<$text text={{$:/AbsoluteBaseUrl}}/>/rss.xml" rel="self" type="application/rss+xml" /&gt;
    &lt;description&gt;{{$:/SiteSubtitle}}&lt;/description&gt;
 
-<$list filter="[tag[$:/plugins/adithyab/tiddlyjam/live]]">
+<$list filter="[tag[$:/plugins/adithyab/tiddlyjam/live]!sort[title]]">
    &lt;item&gt;
       &lt;title&gt;{{!!title}}&lt;/title&gt;
       &lt;link&gt;<$text text={{$:/AbsoluteBaseUrl}}/>/<$macrocall $name="tv-get-export-path" title={{!!title}}/>&lt;/link&gt;

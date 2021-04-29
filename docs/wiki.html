@@ -10250,7 +10250,7 @@ Transform your TiddlyWiki into static websites and blogs. Inspired by JamStack
     }
 }</pre>
 </div>
-<div created="20210306160051062" dependents="" description="A CMS and website renderer for TiddlyWiki." modified="20210314160827375" name="TiddlyJam" plugin-type="plugin" title="$:/plugins/adithyab/tiddlyjam" type="application/json" version="0.2.1" revision="0" bag="default">
+<div created="20210306160051062" dependents="" description="A CMS and website renderer for TiddlyWiki." modified="20210314160827375" name="TiddlyJam" plugin-type="plugin" title="$:/plugins/adithyab/tiddlyjam" type="application/json" version="0.2.2" revision="0" bag="default">
 <pre>{
     &quot;tiddlers&quot;: {
         &quot;404&quot;: {
@@ -10509,6 +10509,15 @@ Transform your TiddlyWiki into static websites and blogs. Inspired by JamStack
             &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
             &quot;text&quot;: &quot;\\whitespace trim\n\n\\define get_description()\n&lt;!--\n\\outline Gets the description by extracting the first paragraph (uses the newline operator) and then rendering it using Wikify\n--&gt;&lt;$list filter=\&quot;[all[current]get[description]]\&quot;&gt;{{!!title}}&lt;/$list&gt;&lt;$list filter=\&quot;[all[current]!has[description]]\&quot;&gt;&lt;$vars lf=\&quot;\n\&quot;&gt;&lt;$list filter=\&quot;[&lt;currentTiddler&gt;get[text]split&lt;lf&gt;trim[]!is[blank]limit[1]]\&quot; variable=\&quot;thisline\&quot;&gt;&lt;$wikify name=\&quot;out\&quot; text=&lt;&lt;thisline&gt;&gt;}&gt;&lt;&lt;out&gt;&gt;&lt;/$wikify&gt;&lt;/$list&gt;&lt;/$vars&gt;&lt;/$list&gt;\n\\end\n\n\\define get_published_date()\n&lt;$list filter=\&quot;[{!!published}is[blank]then{!!created}else{!!published}]\&quot;&gt;&lt;$view field=\&quot;title\&quot; format=\&quot;date\&quot; template=\&quot;DDth MMM, YYYY\&quot; /&gt;&lt;/$list&gt;\n\\end\n\n\\define get_title()\n&lt;$text text={{{ [&lt;currentTiddler&gt;get[name]else&lt;currentTiddler&gt;] }}} /&gt; ~ {{$:/plugins/adithyab/tiddlyjam/renderer/title}}\n\\end\n\n\\define get_display_name()\n&lt;$text text={{{ [&lt;currentTiddler&gt;get[name]else&lt;currentTiddler&gt;] }}} /&gt;\n\\end\n\n\\define get_relative_url()\n/&lt;$macrocall $name=\&quot;tv-get-export-path\&quot; title={{!!title}}/&gt;\n\\end\n\n\\define get_absolute_url()\n&lt;$wikify name=\&quot;url\&quot; text=&lt;&lt;get_relative_url&gt;&gt;&gt;&lt;$text text={{{ [&lt;url&gt;addprefix{$:/plugins/adithyab/tiddlyjam/renderer/baseurl}] }}}/&gt;&lt;/$wikify&gt;\n\\end\n\n\\define get_page_uniqueid()\n&lt;$view field=\&quot;created\&quot;/&gt;\n\\end\n\n\\define tweet-this(url,title,description)\n&lt;a href=\&quot;https://twitter.com/intent/tweet?source=$url$&amp;text=$title$%20$description$&amp;via=adithyab\&quot; target=\&quot;_blank\&quot; title=\&quot;Tweet\&quot;&gt;&lt;img alt=\&quot;Tweet\&quot; src=\&quot;social-icons/Twitter.png\&quot; /&gt;&lt;/a&gt;\n\\end\n&quot;
         },
+        &quot;$:/plugins/adithyab/tiddlyjam/renderer/rss&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/adithyab/tiddlyjam/renderer/rss&quot;,
+            &quot;created&quot;: &quot;20200913085259429&quot;,
+            &quot;modified&quot;: &quot;20201117084124255&quot;,
+            &quot;revision&quot;: &quot;0&quot;,
+            &quot;tags&quot;: &quot;$:/plugins/adithyab/tiddlyjam/internals&quot;,
+            &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
+            &quot;text&quot;: &quot;&amp;lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;UTF-8\&quot;?&amp;gt;\n&amp;lt;rss version=\&quot;2.0\&quot; xmlns:atom=\&quot;http://www.w3.org/2005/Atom\&quot;&amp;gt;\n&amp;lt;channel&amp;gt;\n\n   &amp;lt;title&amp;gt;{{$:/SiteTitle}}&amp;lt;/title&amp;gt;\n   &amp;lt;link&amp;gt;&lt;$text text={{$:/AbsoluteBaseUrl}}/&gt;&amp;lt;/link&amp;gt;\n   &amp;lt;atom:link href=\&quot;&lt;$text text={{$:/AbsoluteBaseUrl}}/&gt;/rss.xml\&quot; rel=\&quot;self\&quot; type=\&quot;application/rss+xml\&quot; /&amp;gt;\n   &amp;lt;description&amp;gt;{{$:/SiteSubtitle}}&amp;lt;/description&amp;gt;\n\n&lt;$list filter=\&quot;[tag[$:/plugins/adithyab/tiddlyjam/live]!sort[title]]\&quot;&gt;\n   &amp;lt;item&amp;gt;\n      &amp;lt;title&amp;gt;{{!!title}}&amp;lt;/title&amp;gt;\n      &amp;lt;link&amp;gt;&lt;$text text={{$:/AbsoluteBaseUrl}}/&gt;/&lt;$macrocall $name=\&quot;tv-get-export-path\&quot; title={{!!title}}/&gt;&amp;lt;/link&amp;gt;\n      &amp;lt;guid&amp;gt;&lt;$text text={{$:/AbsoluteBaseUrl}}/&gt;/&lt;$macrocall $name=\&quot;tv-get-export-path\&quot; title={{!!title}}/&gt;&amp;lt;/guid&amp;gt;\n   &amp;lt;/item&amp;gt;\n&lt;/$list&gt;\n&amp;lt;/channel&amp;gt;\n&amp;lt;/rss&amp;gt;\n&quot;
+        },
         &quot;$:/plugins/adithyab/tiddlyjam/renderer/sitemap&quot;: {
             &quot;title&quot;: &quot;$:/plugins/adithyab/tiddlyjam/renderer/sitemap&quot;,
             &quot;created&quot;: &quot;20200913085259429&quot;,
@@ -10741,7 +10750,7 @@ font-size: 150%
    &amp;lt;atom:link href=&quot;&lt;$text text={{$:/AbsoluteBaseUrl}}/&gt;/rss.xml&quot; rel=&quot;self&quot; type=&quot;application/rss+xml&quot; /&amp;gt;
    &amp;lt;description&amp;gt;{{$:/SiteSubtitle}}&amp;lt;/description&amp;gt;
 
-&lt;$list filter=&quot;[tag[$:/plugins/adithyab/tiddlyjam/live]]&quot;&gt;
+&lt;$list filter=&quot;[tag[$:/plugins/adithyab/tiddlyjam/live]!sort[title]]&quot;&gt;
    &amp;lt;item&amp;gt;
       &amp;lt;title&amp;gt;{{!!title}}&amp;lt;/title&amp;gt;
       &amp;lt;link&amp;gt;&lt;$text text={{$:/AbsoluteBaseUrl}}/&gt;/&lt;$macrocall $name=&quot;tv-get-export-path&quot; title={{!!title}}/&gt;&amp;lt;/link&amp;gt;
