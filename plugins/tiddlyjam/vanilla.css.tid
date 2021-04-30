@@ -1,0 +1,9 @@
+created: 20210430124928142
+modified: 20210430130458157
+tags: $:/plugins/adithyab/tiddlyjam/css $:/plugins/adithyab/tiddlyjam/internals
+title: vanilla.css
+type: text/vnd.tiddlywiki
+
+.tc-btn-big-green { display: inline-block; padding: 8px; margin: 4px 8px 4px 8px; background: #34c734; color: #ffffff; fill: #ffffff; border: none; border-radius: 2px; font-size: 1.2em; line-height: 1.4em; text-decoration: none; }
+
+.tc-btn-big-green svg, .tc-btn-big-green img { height: 2em; width: 2em; vertical-align: middle; fill: #ffffff; }
