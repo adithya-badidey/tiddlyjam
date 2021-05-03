@@ -19,6 +19,7 @@ type: text/vnd.tiddlywiki
       &lt;title&gt;{{!!title}}&lt;/title&gt;
       &lt;link&gt;<$text text={{$:/AbsoluteBaseUrl}}/>/<$macrocall $name="tv-get-export-path" title={{!!title}}/>&lt;/link&gt;
       &lt;guid&gt;<$text text={{$:/AbsoluteBaseUrl}}/>/<$macrocall $name="tv-get-export-path" title={{!!title}}/>&lt;/guid&gt;
+      &lt;pubDate&gt;<$list filter="[{!!published}is[blank]then{!!created}else{!!published}]"><$view field="title" format="date" template="ddd, DD MMM YYYY hh:mm:ss TZD" /></$list>&lt;/pubDate&gt;
    &lt;/item&gt;
 </$list>
 &lt;/channel&gt;

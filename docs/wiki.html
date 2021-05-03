@@ -10171,10 +10171,10 @@ Transform your TiddlyWiki into static websites and blogs. Inspired by JamStack
 
 </pre>
 </div>
-<div created="20210430130458128" modified="20210430130458128" status="complete" title="$:/Import" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20210328060752282" modified="20210328060752282" status="complete" title="$:/Import" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>The following tiddlers were imported:
 
-# [[vanilla.css]]</pre>
+# [[$:/plugins/adithyab/cmplus]]</pre>
 </div>
 <div title="$:/isEncrypted" revision="0" bag="default">
 <pre>no</pre>
@@ -10512,7 +10512,7 @@ Transform your TiddlyWiki into static websites and blogs. Inspired by JamStack
             &quot;revision&quot;: &quot;0&quot;,
             &quot;tags&quot;: &quot;$:/plugins/adithyab/tiddlyjam/internals&quot;,
             &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;&amp;lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;UTF-8\&quot;?&amp;gt;\n&amp;lt;rss version=\&quot;2.0\&quot; xmlns:atom=\&quot;http://www.w3.org/2005/Atom\&quot;&amp;gt;\n&amp;lt;channel&amp;gt;\n\n   &amp;lt;title&amp;gt;{{$:/SiteTitle}}&amp;lt;/title&amp;gt;\n   &amp;lt;link&amp;gt;&lt;$text text={{$:/AbsoluteBaseUrl}}/&gt;&amp;lt;/link&amp;gt;\n   &amp;lt;atom:link href=\&quot;&lt;$text text={{$:/AbsoluteBaseUrl}}/&gt;/rss.xml\&quot; rel=\&quot;self\&quot; type=\&quot;application/rss+xml\&quot; /&amp;gt;\n   &amp;lt;description&amp;gt;{{$:/SiteSubtitle}}&amp;lt;/description&amp;gt;\n\n&lt;$list filter=\&quot;[tag[$:/plugins/adithyab/tiddlyjam/live]!sort[title]]\&quot;&gt;\n   &amp;lt;item&amp;gt;\n      &amp;lt;title&amp;gt;{{!!title}}&amp;lt;/title&amp;gt;\n      &amp;lt;link&amp;gt;&lt;$text text={{$:/AbsoluteBaseUrl}}/&gt;/&lt;$macrocall $name=\&quot;tv-get-export-path\&quot; title={{!!title}}/&gt;&amp;lt;/link&amp;gt;\n      &amp;lt;guid&amp;gt;&lt;$text text={{$:/AbsoluteBaseUrl}}/&gt;/&lt;$macrocall $name=\&quot;tv-get-export-path\&quot; title={{!!title}}/&gt;&amp;lt;/guid&amp;gt;\n   &amp;lt;/item&amp;gt;\n&lt;/$list&gt;\n&amp;lt;/channel&amp;gt;\n&amp;lt;/rss&amp;gt;\n&quot;
+            &quot;text&quot;: &quot;&amp;lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;UTF-8\&quot;?&amp;gt;\n&amp;lt;rss version=\&quot;2.0\&quot; xmlns:atom=\&quot;http://www.w3.org/2005/Atom\&quot;&amp;gt;\n&amp;lt;channel&amp;gt;\n\n   &amp;lt;title&amp;gt;{{$:/SiteTitle}}&amp;lt;/title&amp;gt;\n   &amp;lt;link&amp;gt;&lt;$text text={{$:/AbsoluteBaseUrl}}/&gt;&amp;lt;/link&amp;gt;\n   &amp;lt;atom:link href=\&quot;&lt;$text text={{$:/AbsoluteBaseUrl}}/&gt;/rss.xml\&quot; rel=\&quot;self\&quot; type=\&quot;application/rss+xml\&quot; /&amp;gt;\n   &amp;lt;description&amp;gt;{{$:/SiteSubtitle}}&amp;lt;/description&amp;gt;\n\n&lt;$list filter=\&quot;[tag[$:/plugins/adithyab/tiddlyjam/live]!sort[title]]\&quot;&gt;\n   &amp;lt;item&amp;gt;\n      &amp;lt;title&amp;gt;{{!!title}}&amp;lt;/title&amp;gt;\n      &amp;lt;link&amp;gt;&lt;$text text={{$:/AbsoluteBaseUrl}}/&gt;/&lt;$macrocall $name=\&quot;tv-get-export-path\&quot; title={{!!title}}/&gt;&amp;lt;/link&amp;gt;\n      &amp;lt;guid&amp;gt;&lt;$text text={{$:/AbsoluteBaseUrl}}/&gt;/&lt;$macrocall $name=\&quot;tv-get-export-path\&quot; title={{!!title}}/&gt;&amp;lt;/guid&amp;gt;\n      &amp;lt;pubDate&amp;gt;&lt;$list filter=\&quot;[{!!published}is[blank]then{!!created}else{!!published}]\&quot;&gt;&lt;$view field=\&quot;title\&quot; format=\&quot;date\&quot; template=\&quot;ddd, DD MMM YYYY hh:mm:ss TZD\&quot; /&gt;&lt;/$list&gt;&amp;lt;/pubDate&amp;gt;\n   &amp;lt;/item&amp;gt;\n&lt;/$list&gt;\n&amp;lt;/channel&amp;gt;\n&amp;lt;/rss&amp;gt;\n&quot;
         },
         &quot;$:/plugins/adithyab/tiddlyjam/renderer/sitemap&quot;: {
             &quot;title&quot;: &quot;$:/plugins/adithyab/tiddlyjam/renderer/sitemap&quot;,
@@ -10759,6 +10759,7 @@ font-size: 150%
       &amp;lt;title&amp;gt;{{!!title}}&amp;lt;/title&amp;gt;
       &amp;lt;link&amp;gt;&lt;$text text={{$:/AbsoluteBaseUrl}}/&gt;/&lt;$macrocall $name=&quot;tv-get-export-path&quot; title={{!!title}}/&gt;&amp;lt;/link&amp;gt;
       &amp;lt;guid&amp;gt;&lt;$text text={{$:/AbsoluteBaseUrl}}/&gt;/&lt;$macrocall $name=&quot;tv-get-export-path&quot; title={{!!title}}/&gt;&amp;lt;/guid&amp;gt;
+      &amp;lt;pubDate&amp;gt;&lt;$list filter=&quot;[{!!published}is[blank]then{!!created}else{!!published}]&quot;&gt;&lt;$view field=&quot;title&quot; format=&quot;date&quot; template=&quot;ddd, DD MMM YYYY hh:mm:ss TZD&quot; /&gt;&lt;/$list&gt;&amp;lt;/pubDate&amp;gt;
    &amp;lt;/item&amp;gt;
 &lt;/$list&gt;
 &amp;lt;/channel&amp;gt;
