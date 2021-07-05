@@ -149,6 +149,8 @@ Error message and password prompt
 
 <li>$:/config/NewJournal/Text</li>
 
+<li>$:/config/sq/OverwriteBinaryFiles</li>
+
 <li>$:/config/sq/SaveAsExternalFile</li>
 
 <li>$:/config/TextEditor/EditorHeight/Mode</li>
@@ -159,27 +161,11 @@ Error message and password prompt
 
 <li>$:/DefaultTiddlers</li>
 
-<li>$:/Import</li>
-
 <li>$:/isEncrypted</li>
 
 <li>$:/palette</li>
 
-<li>$:/plugins/adithyab/cmplus</li>
-
 <li>$:/plugins/adithyab/tiddlyjam</li>
-
-<li>$:/plugins/adithyab/tiddlyjam/renderer/base/footer</li>
-
-<li>$:/plugins/adithyab/tiddlyjam/renderer/base/header</li>
-
-<li>$:/plugins/adithyab/tiddlyjam/renderer/base/imports</li>
-
-<li>$:/plugins/adithyab/tiddlyjam/renderer/blog/body</li>
-
-<li>$:/plugins/adithyab/tiddlyjam/renderer/rss</li>
-
-<li>$:/plugins/adithyab/tiddlyjam/renderer/subtitle</li>
 
 <li>$:/plugins/nico/notebook-mobile</li>
 
@@ -292,8 +278,11 @@ Transform your TiddlyWiki into static websites and blogs. Inspired by JamStack
 <div created="20210313205837094" modified="20210313205837111" title="$:/config/NewJournal/Text" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>Why TiddlyJam?</pre>
 </div>
-<div created="20210330153139725" modified="20210403211644572" title="$:/config/sq/SaveAsExternalFile" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>yes</pre>
+<div created="20210331123857536" modified="20210705123454769" title="$:/config/sq/OverwriteBinaryFiles" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>no</pre>
+</div>
+<div created="20210330153139725" modified="20210705123456321" title="$:/config/sq/SaveAsExternalFile" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>no</pre>
 </div>
 <div created="20210324010023495" modified="20210324010023516" title="$:/config/TextEditor/EditorHeight/Mode" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>fixed</pre>
@@ -10171,83 +10160,13 @@ Transform your TiddlyWiki into static websites and blogs. Inspired by JamStack
 
 </pre>
 </div>
-<div created="20210328060752282" modified="20210328060752282" status="complete" title="$:/Import" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>The following tiddlers were imported:
-
-# [[$:/plugins/adithyab/cmplus]]</pre>
-</div>
 <div title="$:/isEncrypted" revision="0" bag="default">
 <pre>no</pre>
 </div>
 <div created="20210323214545204" modified="20210328162510057" title="$:/palette" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>$:/themes/nico/notebook/palettes/palette-beige</pre>
 </div>
-<div created="20210327052508762" dependents="$:/plugins/tiddlywiki/codemirror" description="A better editor for TW5 - built on the CodeMirror Plugin" modified="20210328060752448" name="CMPlus" plugin-type="plugin" tags="CodeMirror" title="$:/plugins/adithyab/cmplus" type="application/json" version="0.2.0" revision="0" bag="default">
-<pre>{
-    &quot;tiddlers&quot;: {
-        &quot;$:/config/codemirror/autocomplete&quot;: {
-            &quot;title&quot;: &quot;$:/config/codemirror/autocomplete&quot;,
-            &quot;text&quot;: &quot;{\n\t\&quot;Ctrl-Space\&quot;: \&quot;autocomplete\&quot;\n}&quot;,
-            &quot;type&quot;: &quot;json&quot;,
-            &quot;created&quot;: &quot;20210328004023360&quot;,
-            &quot;extend&quot;: &quot;extraKeys&quot;,
-            &quot;modified&quot;: &quot;20210328004023360&quot;
-        },
-        &quot;$:/plugins/adithyab/cmplus/macros&quot;: {
-            &quot;title&quot;: &quot;$:/plugins/adithyab/cmplus/macros&quot;,
-            &quot;created&quot;: &quot;20210328020051916&quot;,
-            &quot;modified&quot;: &quot;20210328053732117&quot;,
-            &quot;tags&quot;: &quot;$:/tags/Macro&quot;,
-            &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;\\define cmcolour(name)\n{{$:/plugins/adithyab/cmplus/settings##$name$}}\n\\end&quot;
-        },
-        &quot;$:/plugins/adithyab/cmplus/settings&quot;: {
-            &quot;title&quot;: &quot;$:/plugins/adithyab/cmplus/settings&quot;,
-            &quot;text&quot;: &quot;monospace-font:monospace,\&quot;Courier New\&quot;\nselected:rgba(100,100,100,0.3)\nlinenumber:&lt;&lt;colour primary&gt;&gt;\nkeyword:&lt;&lt;colour code-foreground&gt;&gt;\nmacro:&lt;&lt;colour code-foreground&gt;&gt;\nquote:&lt;&lt;colour primary&gt;&gt;\npre:&lt;&lt;colour foreground&gt;&gt;\nexternallink:&lt;&lt;colour external-link-foreground&gt;&gt;\ninternallink:&lt;&lt;colour tiddler-title-foreground&gt;&gt;\nlink:&lt;&lt;colour tiddler-title-foreground&gt;&gt;\ntransclude:&lt;&lt;colour tiddler-title-foreground&gt;&gt;\nmonospace:&lt;&lt;colour foreground&gt;&gt;\nlist1:&lt;&lt;colour primary&gt;&gt;\nlist2:&lt;&lt;colour primary&gt;&gt;\nlist3:&lt;&lt;colour primary&gt;&gt;\nlist4:&lt;&lt;colour primary&gt;&gt;\nlist5:&lt;&lt;colour primary&gt;&gt;\nlist6:&lt;&lt;colour primary&gt;&gt;\nh1:&lt;&lt;colour primary&gt;&gt;\nh2:&lt;&lt;colour primary&gt;&gt;\nh3:&lt;&lt;colour primary&gt;&gt;\nh4:&lt;&lt;colour primary&gt;&gt;\nh5:&lt;&lt;colour primary&gt;&gt;\nh6:&lt;&lt;colour primary&gt;&gt;\nhr:&lt;&lt;colour primary&gt;&gt;&quot;,
-            &quot;type&quot;: &quot;application/x-tiddler-dictionary&quot;,
-            &quot;created&quot;: &quot;20210328015904035&quot;,
-            &quot;modified&quot;: &quot;20210328054754059&quot;,
-            &quot;tags&quot;: &quot;&quot;
-        },
-        &quot;$:/plugins/tiddlywiki/codemirror/addon/hint/anyword-hint.js&quot;: {
-            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/codemirror/addon/hint/anyword-hint.js&quot;,
-            &quot;text&quot;: &quot;// CodeMirror, copyright (c) by Marijn Haverbeke and others\n// Distributed under an MIT license: https://codemirror.net/LICENSE\n\n(function (mod) {\n\tif (typeof exports == \&quot;object\&quot; &amp;&amp; typeof module == \&quot;object\&quot;) // CommonJS\n\t\tmod(require(\&quot;../../lib/codemirror\&quot;));\n\telse if (typeof define == \&quot;function\&quot; &amp;&amp; define.amd) // AMD\n\t\tdefine([\&quot;../../lib/codemirror\&quot;], mod);\n\telse // Plain browser env\n\t\tmod(CodeMirror);\n})(function (CodeMirror) {\n\t\&quot;use strict\&quot;;\n\n\tCodeMirror.registerHelper('hint', 'anyword', function (editor) {\n\t\tvar cur = editor.getCursor();\n\t\tvar curLine = editor.getLine(cur.line);\n\t\tvar start = cur.ch;\n\t\tvar end = start;\n\t\tvar max_length = 30\n\t\twhile (start) {\n\t\t\tif (end - start &gt; max_length) {\n\t\t\t\treturn null;\n\t\t\t}\n\t\t\tvar ch = curLine.charAt(start - 1)\n\t\t\tif (!(ch == '[' || ch == '{' || ch == \&quot;|\&quot;)) {\n\t\t\t\tstart--;\n\t\t\t} else {\n\t\t\t\tbreak;\n\t\t\t}\n\t\t}\n\t\tvar curWord = start !== end &amp;&amp; curLine.slice(start, end);\n\t\tif (curLine.charAt(start) == '$') {\n\t\t\treturn {\n\t\t\t\tlist: $tw.wiki.filterTiddlers(`[all[tiddlers]search:title:literal[${curWord}]!prefix[$:/state]]`),\n\t\t\t\tfrom: CodeMirror.Pos(cur.line, start),\n\t\t\t\tto: CodeMirror.Pos(cur.line, end)\n\t\t\t}\n\t\t} else {\n\t\t\treturn {\n\t\t\t\tlist: $tw.wiki.filterTiddlers(`[all[tiddlers]!is[system]!is[shadow]search:title:literal[${curWord}]!prefix[$:/state]]`),\n\t\t\t\tfrom: CodeMirror.Pos(cur.line, start),\n\t\t\t\tto: CodeMirror.Pos(cur.line, end)\n\t\t\t}\n\t\t}\n\t})\n});&quot;,
-            &quot;created&quot;: &quot;20210328004232522&quot;,
-            &quot;modified&quot;: &quot;20210328010801763&quot;,
-            &quot;module-type&quot;: &quot;codemirror&quot;,
-            &quot;type&quot;: &quot;application/javascript&quot;
-        },
-        &quot;$:/plugins/tiddlywiki/codemirror/addon/hint/show-hint.js&quot;: {
-            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/codemirror/addon/hint/show-hint.js&quot;,
-            &quot;text&quot;: &quot;// CodeMirror, copyright (c) by Marijn Haverbeke and others\n// Distributed under an MIT license: https://codemirror.net/LICENSE\n!function(t){\&quot;object\&quot;==typeof exports&amp;&amp;\&quot;object\&quot;==typeof module?t(require(\&quot;../../lib/codemirror\&quot;)):\&quot;function\&quot;==typeof define&amp;&amp;define.amd?define([\&quot;../../lib/codemirror\&quot;],t):t(CodeMirror)}(function(W){\&quot;use strict\&quot;;var I=\&quot;CodeMirror-hint-active\&quot;;function o(t,i){this.cm=t,this.options=i,this.widget=null,this.debounce=0,this.tick=0,this.startPos=this.cm.getCursor(\&quot;start\&quot;),this.startLen=this.cm.getLine(this.startPos.line).length-this.cm.getSelection().length;var e=this;t.on(\&quot;cursorActivity\&quot;,this.activityFunc=function(){e.cursorActivity()})}W.showHint=function(t,i,e){if(!i)return t.showHint(e);e&amp;&amp;e.async&amp;&amp;(i.async=!0);var n={hint:i};if(e)for(var o in e)n[o]=e[o];return t.showHint(n)},W.defineExtension(\&quot;showHint\&quot;,function(t){t=function(t,i,e){var n=t.options.hintOptions,o={};for(var s in l)o[s]=l[s];if(n)for(var s in n)void 0!==n[s]&amp;&amp;(o[s]=n[s]);if(e)for(var s in e)void 0!==e[s]&amp;&amp;(o[s]=e[s]);o.hint.resolve&amp;&amp;(o.hint=o.hint.resolve(t,i));return o}(this,this.getCursor(\&quot;start\&quot;),t);var i=this.listSelections();if(!(1&lt;i.length)){if(this.somethingSelected()){if(!t.hint.supportsSelection)return;for(var e=0;e&lt;i.length;e++)if(i[e].head.line!=i[e].anchor.line)return}this.state.completionActive&amp;&amp;this.state.completionActive.close();var n=this.state.completionActive=new o(this,t);n.options.hint&amp;&amp;(W.signal(this,\&quot;startCompletion\&quot;,this),n.update(!0))}}),W.defineExtension(\&quot;closeHint\&quot;,function(){this.state.completionActive&amp;&amp;this.state.completionActive.close()});var s=window.requestAnimationFrame||function(t){return setTimeout(t,1e3/60)},c=window.cancelAnimationFrame||clearTimeout;function B(t){return\&quot;string\&quot;==typeof t?t:t.text}function K(t,i){for(;i&amp;&amp;i!=t;){if(\&quot;LI\&quot;===i.nodeName.toUpperCase()&amp;&amp;i.parentNode==t)return i;i=i.parentNode}}function n(o,t){this.completion=o,this.data=t,this.picked=!1;var e=this,s=o.cm,c=s.getInputField().ownerDocument,r=c.defaultView||c.parentWindow,l=this.hints=c.createElement(\&quot;ul\&quot;),i=o.cm.options.theme;l.className=\&quot;CodeMirror-hints \&quot;+i,this.selectedHint=t.selectedHint||0;for(var n=t.list,h=0;h&lt;n.length;++h){var a=l.appendChild(c.createElement(\&quot;li\&quot;)),u=n[h],f=\&quot;CodeMirror-hint\&quot;+(h!=this.selectedHint?\&quot;\&quot;:\&quot; \&quot;+I);null!=u.className&amp;&amp;(f=u.className+\&quot; \&quot;+f),a.className=f,u.render?u.render(a,t,u):a.appendChild(c.createTextNode(u.displayText||B(u))),a.hintId=h}var p,d,m,g=o.options.container||c.body,v=s.cursorCoords(o.options.alignWithWord?t.from:null),y=v.left,w=v.bottom,H=!0,C=0,b=0;g!==c.body&amp;&amp;(d=(p=-1!==[\&quot;absolute\&quot;,\&quot;relative\&quot;,\&quot;fixed\&quot;].indexOf(r.getComputedStyle(g).position)?g:g.offsetParent).getBoundingClientRect(),m=c.body.getBoundingClientRect(),C=d.left-m.left-p.scrollLeft,b=d.top-m.top-p.scrollTop),l.style.left=y-C+\&quot;px\&quot;,l.style.top=w-b+\&quot;px\&quot;;var k=r.innerWidth||Math.max(c.body.offsetWidth,c.documentElement.offsetWidth),A=r.innerHeight||Math.max(c.body.offsetHeight,c.documentElement.offsetHeight);g.appendChild(l);var x,T,S=l.getBoundingClientRect(),M=S.bottom-A,N=l.scrollHeight&gt;l.clientHeight+1,F=s.getScrollInfo();0&lt;M&amp;&amp;(x=S.bottom-S.top,0&lt;v.top-(v.bottom-S.top)-x?(l.style.top=(w=v.top-x-b)+\&quot;px\&quot;,H=!1):A&lt;x&amp;&amp;(l.style.height=A-5+\&quot;px\&quot;,l.style.top=(w=v.bottom-S.top-b)+\&quot;px\&quot;,T=s.getCursor(),t.from.ch!=T.ch&amp;&amp;(v=s.cursorCoords(T),l.style.left=(y=v.left-C)+\&quot;px\&quot;,S=l.getBoundingClientRect())));var E,O=S.right-k;if(0&lt;O&amp;&amp;(S.right-S.left&gt;k&amp;&amp;(l.style.width=k-5+\&quot;px\&quot;,O-=S.right-S.left-k),l.style.left=(y=v.left-O-C)+\&quot;px\&quot;),N)for(var P=l.firstChild;P;P=P.nextSibling)P.style.paddingRight=s.display.nativeBarWidth+\&quot;px\&quot;;return s.addKeyMap(this.keyMap=function(t,n){var o={Up:function(){n.moveFocus(-1)},Down:function(){n.moveFocus(1)},PageUp:function(){n.moveFocus(1-n.menuSize(),!0)},PageDown:function(){n.moveFocus(n.menuSize()-1,!0)},Home:function(){n.setFocus(0)},End:function(){n.setFocus(n.length-1)},Enter:n.pick,Tab:n.pick,Esc:n.close};/Mac/.test(navigator.platform)&amp;&amp;(o[\&quot;Ctrl-P\&quot;]=function(){n.moveFocus(-1)},o[\&quot;Ctrl-N\&quot;]=function(){n.moveFocus(1)});var i=t.options.customKeys,s=i?{}:o;function e(t,i){var e=\&quot;string\&quot;!=typeof i?function(t){return i(t,n)}:o.hasOwnProperty(i)?o[i]:i;s[t]=e}if(i)for(var c in i)i.hasOwnProperty(c)&amp;&amp;e(c,i[c]);var r=t.options.extraKeys;if(r)for(var c in r)r.hasOwnProperty(c)&amp;&amp;e(c,r[c]);return s}(o,{moveFocus:function(t,i){e.changeActive(e.selectedHint+t,i)},setFocus:function(t){e.changeActive(t)},menuSize:function(){return e.screenAmount()},length:n.length,close:function(){o.close()},pick:function(){e.pick()},data:t})),o.options.closeOnUnfocus&amp;&amp;(s.on(\&quot;blur\&quot;,this.onBlur=function(){E=setTimeout(function(){o.close()},100)}),s.on(\&quot;focus\&quot;,this.onFocus=function(){clearTimeout(E)})),s.on(\&quot;scroll\&quot;,this.onScroll=function(){var t=s.getScrollInfo(),i=s.getWrapperElement().getBoundingClientRect(),e=w+F.top-t.top,n=e-(r.pageYOffset||(c.documentElement||c.body).scrollTop);if(H||(n+=l.offsetHeight),n&lt;=i.top||n&gt;=i.bottom)return o.close();l.style.top=e+\&quot;px\&quot;,l.style.left=y+F.left-t.left+\&quot;px\&quot;}),W.on(l,\&quot;dblclick\&quot;,function(t){var i=K(l,t.target||t.srcElement);i&amp;&amp;null!=i.hintId&amp;&amp;(e.changeActive(i.hintId),e.pick())}),W.on(l,\&quot;click\&quot;,function(t){var i=K(l,t.target||t.srcElement);i&amp;&amp;null!=i.hintId&amp;&amp;(e.changeActive(i.hintId),o.options.completeOnSingleClick&amp;&amp;e.pick())}),W.on(l,\&quot;mousedown\&quot;,function(){setTimeout(function(){s.focus()},20)}),this.scrollToActive(),W.signal(t,\&quot;select\&quot;,n[this.selectedHint],l.childNodes[this.selectedHint]),!0}function r(t,i,e,n){var o;t.async?t(i,n,e):(o=t(i,e))&amp;&amp;o.then?o.then(n):n(o)}o.prototype={close:function(){this.active()&amp;&amp;(this.cm.state.completionActive=null,this.tick=null,this.cm.off(\&quot;cursorActivity\&quot;,this.activityFunc),this.widget&amp;&amp;this.data&amp;&amp;W.signal(this.data,\&quot;close\&quot;),this.widget&amp;&amp;this.widget.close(),W.signal(this.cm,\&quot;endCompletion\&quot;,this.cm))},active:function(){return this.cm.state.completionActive==this},pick:function(t,i){var e=t.list[i],n=this;this.cm.operation(function(){e.hint?e.hint(n.cm,t,e):n.cm.replaceRange(B(e),e.from||t.from,e.to||t.to,\&quot;complete\&quot;),W.signal(t,\&quot;pick\&quot;,e),n.cm.scrollIntoView()}),this.close()},cursorActivity:function(){this.debounce&amp;&amp;(c(this.debounce),this.debounce=0);var t=this.startPos;this.data&amp;&amp;(t=this.data.from);var i,e=this.cm.getCursor(),n=this.cm.getLine(e.line);e.line!=this.startPos.line||n.length-e.ch!=this.startLen-this.startPos.ch||e.ch&lt;t.ch||this.cm.somethingSelected()||!e.ch||this.options.closeCharacters.test(n.charAt(e.ch-1))?this.close():((i=this).debounce=s(function(){i.update()}),this.widget&amp;&amp;this.widget.disable())},update:function(i){var e,n;null!=this.tick&amp;&amp;(n=++(e=this).tick,r(this.options.hint,this.cm,this.options,function(t){e.tick==n&amp;&amp;e.finishUpdate(t,i)}))},finishUpdate:function(t,i){this.data&amp;&amp;W.signal(this.data,\&quot;update\&quot;);var e=this.widget&amp;&amp;this.widget.picked||i&amp;&amp;this.options.completeSingle;this.widget&amp;&amp;this.widget.close(),(this.data=t)&amp;&amp;t.list.length&amp;&amp;(e&amp;&amp;1==t.list.length?this.pick(t,0):(this.widget=new n(this,t),W.signal(t,\&quot;shown\&quot;)))}},n.prototype={close:function(){var t;this.completion.widget==this&amp;&amp;(this.completion.widget=null,this.hints.parentNode.removeChild(this.hints),this.completion.cm.removeKeyMap(this.keyMap),t=this.completion.cm,this.completion.options.closeOnUnfocus&amp;&amp;(t.off(\&quot;blur\&quot;,this.onBlur),t.off(\&quot;focus\&quot;,this.onFocus)),t.off(\&quot;scroll\&quot;,this.onScroll))},disable:function(){this.completion.cm.removeKeyMap(this.keyMap);var t=this;this.keyMap={Enter:function(){t.picked=!0}},this.completion.cm.addKeyMap(this.keyMap)},pick:function(){this.completion.pick(this.data,this.selectedHint)},changeActive:function(t,i){var e;t&gt;=this.data.list.length?t=i?this.data.list.length-1:0:t&lt;0&amp;&amp;(t=i?0:this.data.list.length-1),this.selectedHint!=t&amp;&amp;((e=this.hints.childNodes[this.selectedHint])&amp;&amp;(e.className=e.className.replace(\&quot; \&quot;+I,\&quot;\&quot;)),(e=this.hints.childNodes[this.selectedHint=t]).className+=\&quot; \&quot;+I,this.scrollToActive(),W.signal(this.data,\&quot;select\&quot;,this.data.list[this.selectedHint],e))},scrollToActive:function(){var t=this.completion.options.scrollMargin||0,i=this.hints.childNodes[Math.max(0,this.selectedHint-t)],e=this.hints.childNodes[Math.min(this.data.list.length-1,this.selectedHint+t)],n=this.hints.firstChild;i.offsetTop&lt;this.hints.scrollTop?this.hints.scrollTop=i.offsetTop-n.offsetTop:e.offsetTop+e.offsetHeight&gt;this.hints.scrollTop+this.hints.clientHeight&amp;&amp;(this.hints.scrollTop=e.offsetTop+e.offsetHeight-this.hints.clientHeight+n.offsetTop)},screenAmount:function(){return Math.floor(this.hints.clientHeight/this.hints.firstChild.offsetHeight)||1}},W.registerHelper(\&quot;hint\&quot;,\&quot;auto\&quot;,{resolve:function(t,i){var e,c=t.getHelpers(i,\&quot;hint\&quot;);if(c.length){var n=function(t,n,o){var s=function(t,i){if(!t.somethingSelected())return i;for(var e=[],n=0;n&lt;i.length;n++)i[n].supportsSelection&amp;&amp;e.push(i[n]);return e}(t,c);!function i(e){if(e==s.length)return n(null);r(s[e],t,o,function(t){t&amp;&amp;0&lt;t.list.length?n(t):i(e+1)})}(0)};return n.async=!0,n.supportsSelection=!0,n}return(e=t.getHelper(t.getCursor(),\&quot;hintWords\&quot;))?function(t){return W.hint.fromList(t,{words:e})}:W.hint.anyword?function(t,i){return W.hint.anyword(t,i)}:function(){}}}),W.registerHelper(\&quot;hint\&quot;,\&quot;fromList\&quot;,function(t,i){var e,n=t.getCursor(),o=t.getTokenAt(n),s=W.Pos(n.line,o.start),c=n;o.start&lt;n.ch&amp;&amp;/\\w/.test(o.string.charAt(n.ch-o.start-1))?e=o.string.substr(0,n.ch-o.start):(e=\&quot;\&quot;,s=n);for(var r=[],l=0;l&lt;i.words.length;l++){var h=i.words[l];h.slice(0,e.length)==e&amp;&amp;r.push(h)}if(r.length)return{list:r,from:s,to:c}}),W.commands.autocomplete=W.showHint;var l={hint:W.hint.auto,completeSingle:!0,alignWithWord:!0,closeCharacters:/[\\s()\\[\\]{};:&gt;,]/,closeOnUnfocus:!0,completeOnSingleClick:!0,container:null,customKeys:null,extraKeys:null};W.defineOption(\&quot;hintOptions\&quot;,null)});\n&quot;,
-            &quot;created&quot;: &quot;20210328012150088&quot;,
-            &quot;modified&quot;: &quot;20210328012150088&quot;,
-            &quot;module-type&quot;: &quot;codemirror&quot;,
-            &quot;type&quot;: &quot;application/javascript&quot;
-        },
-        &quot;$:/plugins/tiddlywiki/codemirror/mode/tw5/tw5.css&quot;: {
-            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/codemirror/mode/tw5/tw5.css&quot;,
-            &quot;created&quot;: &quot;20200815103937889&quot;,
-            &quot;modified&quot;: &quot;20210328054714579&quot;,
-            &quot;module-type&quot;: &quot;codemirror-theme&quot;,
-            &quot;name&quot;: &quot;cmplus&quot;,
-            &quot;tags&quot;: &quot;$:/tags/Stylesheet&quot;,
-            &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;```\n/*\nTiddlywiki Metadata\n----\nName: $:/plugins/tiddlywiki/codemirror/mode/tw5/tw5.css\n\nAdditional Fields - \nmodule-type: codemirror-theme\nname: cmplus\n*/\n```\n\n.cm-s-cmplus{\n    line-height: 1.5em;\n    background: &lt;&lt;colour tiddler-editor-background&gt;&gt; !important;\n    color: &lt;&lt;colour foreground&gt;&gt; !important;\n}\n\n.cm-s-cmplus .CodeMirror-lines {\n    padding: 8px 0;\n}\n\n.cm-s-cmplus .CodeMirror-linenumber {\n    color: &lt;&lt;cmcolour linenumber&gt;&gt;;\n}\n\n.cm-s-cmplus .CodeMirror-gutters {\n    background-color: &lt;&lt;colour page-background&gt;&gt;;\n    padding-right: 10px;\n    z-index: 3;\n    border: none;\n}\n\n.cm-s-cmplus div.CodeMirror-cursor {\n    border-left: 3px solid &lt;&lt;colour very-muted-foreground&gt;&gt;;\n}\n\n.cm-s-cmplus .CodeMirror-activeline-background {\n    background: &lt;&lt;colour tiddler-editor-fields-even&gt;&gt;;\n}\n\n.cm-s-cmplus .CodeMirror-selected {\n    background: &lt;&lt;cmcolour selected&gt;&gt; !important;\n}\n\n.cm-s-cmplus .cm-comment {\n    font-style: italic;\n    color: &lt;&lt;colour muted-foreground&gt;&gt;;\n}\n\n.cm-s-cmplus .CodeMirror-matchingbracket {\n    text-decoration: underline;\n    color: &lt;&lt;cmcolour matching-bracket&gt;&gt; !important;\n}\n\n.cm-s-cmplus .cm-strikethrough {\n    text-decoration-color: &lt;&lt;colour very-muted-foreground&gt;&gt;;  \n}\n\n.cm-s-cmplus .cm-underlined {\n    text-decoration-line: underline;\n    text-decoration-style: solid;\n    text-decoration-color: &lt;&lt;colour very-muted-foreground&gt;&gt;;\n}\n\n.cm-s-cmplus .cm-superscript {\n    vertical-align: super;\n    font-size: 0.7em;\n    line-height: 0.1em;\n}\n\n.cm-s-cmplus .cm-subscript {\n    font-size: 0.7em;\n    line-height: 0.5;\n}\n\n.cm-s-cmplus .cm-macro {\n    color: &lt;&lt;cmcolour macro&gt;&gt;;\n    font-family: {{$:/themes/tiddlywiki/vanilla/settings/codefontfamily}};\n}\n\n.cm-s-cmplus .cm-keyword {\n    color: &lt;&lt;cmcolour keyword&gt;&gt;;\n    font-family: {{$:/themes/tiddlywiki/vanilla/settings/codefontfamily}};\n    font-weight: 600;\n}\n\n.cm-s-cmplus .cm-quote {\n    font-style: italic;\n    padding-left: 0.6em;\n    border-left: &lt;&lt;cmcolour quote&gt;&gt; solid 0.2em;\n}\n\n.cm-s-cmplus .cm-hr {\n    color: &lt;&lt;cmcolour hr&gt;&gt;;\n}\n\n.cm-s-cmplus .cm-h1 {\n    color: &lt;&lt;cmcolour h1&gt;&gt;;\n    font-weight: 700;\n    font-size: 1.383em;\n    line-height: 1.802em;\n}\n\n.cm-s-cmplus .cm-h2 {\n    color: &lt;&lt;cmcolour h2&gt;&gt;;\n    font-weight: 600;\n    font-size: 1.296em;\n    line-height: 1.602em;\n}\n\n.cm-s-cmplus .cm-h3 {\n    color: &lt;&lt;cmcolour h3&gt;&gt;;\n    font-weight: 500;\n    font-size: 1.215em;\n    line-height: 1.424em;\n}\n\n.cm-s-cmplus .cm-h4 {\n    color: &lt;&lt;cmcolour h4&gt;&gt;;\n    font-weight: 400;\n    font-size: 1.138em;\n    line-height: 1.266em;\n}\n\n.cm-s-cmplus .cm-h5 {\n    color: &lt;&lt;cmcolour h5&gt;&gt;;\n    font-weight: 400;\n    font-size: 1.067em;\n    line-height: 1.125em;\n}\n\n.cm-s-cmplus .cm-h6 {\n    color: &lt;&lt;cmcolour h6&gt;&gt;;\n    font-weight: 400;\n}\n\n.cm-s-cmplus .cm-link {\n    color: &lt;&lt;cmcolour link&gt;&gt;;\n    text-decoration: none;\n    font-weight: 600;\n}\n\n.cm-s-cmplus .cm-internallink {\n    color: &lt;&lt;cmcolour internallink&gt;&gt;;\n    font-weight:600;\n}\n\n.cm-s-cmplus .cm-externallink {\n    color: &lt;&lt;cmcolour externallink&gt;&gt;;\n    text-decoration: underline;\n}\n\n.cm-s-cmplus .cm-transclude {\n    color: &lt;&lt;cmcolour transclude&gt;&gt;;\n}\n\n.cm-s-cmplus .cm-pre {\n    color: &lt;&lt;cmcolour pre&gt;&gt;;\t\t\n    font-family: {{$:/plugins/adithyab/cmplus/settings##monospace-font}};\n}\n\n.cm-s-cmplus .cm-monospace {\n    color: &lt;&lt;cmcolour monospace&gt;&gt;;\n    font-family: {{$:/plugins/adithyab/cmplus/settings##monospace-font}};\n}\n\n.cm-s-cmplus .cm-list1 {\n    color: &lt;&lt;cmcolour list1&gt;&gt;;\n    padding-left: 1em;\n    padding-right: 0.5em;\n    font-family: {{$:/themes/tiddlywiki/vanilla/settings/codefontfamily}};\n}\n\n.cm-s-cmplus .cm-list2 {\n    color: &lt;&lt;cmcolour list2&gt;&gt;;\n    padding-left: 2em;\n    padding-right: 0.5em;\n    font-family: {{$:/themes/tiddlywiki/vanilla/settings/codefontfamily}};\n}\n\n.cm-s-cmplus .cm-list3 {\n    color: &lt;&lt;cmcolour list3&gt;&gt;;\n    padding-left: 3em;\n    padding-right: 0.5em;\n    font-family: {{$:/themes/tiddlywiki/vanilla/settings/codefontfamily}};\n}\n\n.cm-s-cmplus .cm-list4 {\n    color: &lt;&lt;cmcolour list4&gt;&gt;;\n    padding-left: 4em;\n    padding-right: 0.5em;\n    font-family: {{$:/themes/tiddlywiki/vanilla/settings/codefontfamily}};\n}\n\n.cm-s-cmplus .cm-list5 {\n    color: &lt;&lt;cmcolour list5&gt;&gt;;\n    padding-left: 5em;\n    padding-right: 0.5em;\n    font-family: {{$:/themes/tiddlywiki/vanilla/settings/codefontfamily}};\n}&quot;
-        },
-        &quot;$:/plugins/tiddlywiki/codemirror/mode/tw5/tw5.js&quot;: {
-            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/codemirror/mode/tw5/tw5.js&quot;,
-            &quot;text&quot;: &quot;// CodeMirror, copyright (c) by Marijn Haverbeke and others\n// Distributed under an MIT license: https://codemirror.net/LICENSE\n\n/***\n\n|''Name''|tw5.js|\n|''Description''|Enables TiddlyWikiy syntax highlighting using CodeMirror|\n|''Original Contributor''|PMario|\n|''Author''|[[adithya-badidey|https://github.com/adithya-badidey]]|\n|''Version''|0.1.8|\n|''Status''|''stable''|\n|''Source''|[[GitHub|https://github.com/adithya-badidey/TW5-codemirror-plus]]|\n|''Documentation''|https://codemirror.tiddlyspace.com/|\n|''License''|[[MIT License|http://www.opensource.org/licenses/mit-license.php]]|\n|''Requires''|codemirror.js|\n|''Keywords''|syntax highlighting color code mirror codemirror|\n\n!! Tiddlywiki Metadata\nName: $:/plugins/tiddlywiki/codemirror/mode/tw5/tw5.js\nType: application/javascript\nAdditional Field:\nmodule-type: codemirror\n \nInfo: CoreVersion parameter is needed for TiddlyWiki only!\n\n***/\n\n(function (mod) {\n    if (typeof exports == \&quot;object\&quot; &amp;&amp; typeof module == \&quot;object\&quot;) // CommonJS\n        mod(require(\&quot;../../lib/codemirror\&quot;));\n    else if (typeof define == \&quot;function\&quot; &amp;&amp; define.amd) // AMD\n        define([\&quot;../../lib/codemirror\&quot;], mod);\n    else // Plain browser env\n        mod(CodeMirror);\n})(function (CodeMirror) {\n    \&quot;use strict\&quot;;\n\n    CodeMirror.defineMode(\&quot;tiddlywiki5\&quot;, function () {\n        // Tokenizer\n        var textwords = {};\n\n        var keywords = {\n            \&quot;changecount\&quot;: true, \&quot;colour\&quot;: true,\n            \&quot;colour-picker\&quot;: true, \&quot;contrastcolour\&quot;: true,\n            \&quot;copy-to-clipboard\&quot;: true, \&quot;csvtiddlers\&quot;: true,\n            \&quot;datauri\&quot;: true, \&quot;dumpvariables\&quot;: true,\n            \&quot;image-picker\&quot;: true, \&quot;jsontiddler\&quot;: true,\n            \&quot;jsontiddlers\&quot;: true, \&quot;lingo\&quot;: true,\n            \&quot;list-links\&quot;: true, \&quot;list-links-draggable\&quot;: true,\n            \&quot;list-tagged-draggable\&quot;: true, \&quot;list-thumbnails\&quot;: true,\n            \&quot;makedatauri\&quot;: true, \&quot;now\&quot;: true,\n            \&quot;qualify\&quot;: true, \&quot;resolvepath\&quot;: true,\n            \&quot;box-shadow\&quot;: true, \&quot;filter\&quot;: true,\n            \&quot;transition\&quot;: true, \&quot;background-linear-gradient\&quot;: true,\n            \&quot;transform-origin\&quot;: true, \&quot;toc\&quot;: true,\n            \&quot;toc-expandable\&quot;: true, \&quot;toc-selective-expandable\&quot;: true,\n            \&quot;toc-tabbed-internal-nav\&quot;: true, \&quot;toc-tabbed-external-nav\&quot;: true,\n            \&quot;tabs\&quot;: true, \&quot;tag\&quot;: true,\n            \&quot;tag-picker\&quot;: true, \&quot;tag-pill\&quot;: true,\n            \&quot;thumbnail\&quot;: true, \&quot;timeline\&quot;: true,\n            \&quot;tree\&quot;: true, \&quot;unusedtitle\&quot;: true,\n            \&quot;version\&quot;: true\n        };\n\n        var isSpaceName = /[\\w_\\-]/i,\n            reHR = /^\\-\\-\\-\\-+$/,                                 // &lt;hr&gt;\n            reBlockQuote = /^&lt;&lt;&lt;/,\n            rePreStart = /^```$/;\n\n        function chain(stream, state, f) {\n            state.tokenize = f;\n            return f(stream, state);\n        }\n\n        function tokenBase(stream, state) {\n            var sol = stream.sol(), // sol() -&gt; Returns true only if the stream is at the start of the line.\n                ch = stream.peek(); // Returns the next character in the stream without advancing it. Will return a null at the end of the line.\n\n            // check start of  blocks\n            if (sol &amp;&amp; /[&lt;\\/\\*{}\\-`]/.test(ch)) { //is at the start of a line and the next char is not\n                if (stream.match(reBlockQuote)) {\n                    return chain(stream, state, twTokenQuote);\n                }\n                \n                if (stream.match(reHR))\n                    return 'hr';\n\n                if (stream.match(rePreStart))\n                    return chain(stream, state, twTokenPre);\n            }\n\n            stream.next();\n            if (sol &amp;&amp; /[\\/\\*!#;:&gt;|]/.test(ch)) {\n                if (ch == \&quot;!\&quot;) { // tw header\n                    var count = 1;\n                    while (stream.eat('!'))\n                        count++;\n                    stream.skipToEnd();\n                    return \&quot;h\&quot; + count;\n                }\n\n                if (ch == \&quot;*\&quot; || ch == \&quot;#\&quot;) { // tw list\n                    var count = 1;\n                    while (stream.eat('*') || stream.eat('#'))\n                        count++;\n                    return \&quot;list\&quot; + count;\n                }\n                if (ch == \&quot;;\&quot;) { // definition list, term\n                    stream.eatWhile(';');\n                    return \&quot;list1\&quot;;\n                }\n                if (ch == \&quot;:\&quot;) { // definition list, description\n                    stream.eatWhile(':');\n                    return \&quot;list2\&quot;;\n                }\n                if (ch == \&quot;&gt;\&quot;) { // single line quote\n                    stream.eatWhile(\&quot;&gt;\&quot;);\n                    return \&quot;quote\&quot;;\n                }\n                if (ch == '|')\n                    return 'header';\n            }\n\n            // rudimentary html:// file:// link matching. TW knows much more ...\n            if (/[hf]/i.test(ch) &amp;&amp;\n                /[ti]/i.test(stream.peek()) &amp;&amp;\n                stream.match(/\\b(ttps?|tp|ile):\\/\\/[\\-A-Z0-9+&amp;@#\\/%?=~_|$!:,.;]*[A-Z0-9+&amp;@#\\/%=~_|$]/i, true))\n                return \&quot;externallink\&quot;;\n\n            if (ch == '`') { //\n                return chain(stream, state, twTokenMonospace);\n            }\n\n            if (ch == \&quot;/\&quot; &amp;&amp; stream.eat(\&quot;/\&quot;)) { //\n                return chain(stream, state, twTokenEm);\n            }\n\n            if (ch == \&quot;{\&quot; &amp;&amp; stream.eat(\&quot;{\&quot;)) \n                return chain(stream, state, twTranslclude);\n\n            if (ch == \&quot;[\&quot; &amp;&amp; stream.eat(\&quot;[\&quot;)) // tw InternalLink\n                return chain(stream, state, twInternalLink);\n\n            if (ch == \&quot;_\&quot; &amp;&amp; stream.eat(\&quot;_\&quot;)) // tw underline\n                return chain(stream, state, twTokenUnderline);\n\n            if (ch == \&quot;^\&quot; &amp;&amp; stream.eat(\&quot;^\&quot;))\n                return chain(stream, state, twSuperscript);\n\n            if (ch == \&quot;,\&quot; &amp;&amp; stream.eat(\&quot;,\&quot;)) // tw underline\n                return chain(stream, state, twSubscript);\n\n            // tw strikethrough\n            if (ch == \&quot;~\&quot; &amp;&amp; stream.eat(\&quot;~\&quot;)) {\n                return chain(stream, state, twTokenStrike);\n            }\n\n            if (ch == \&quot;'\&quot; &amp;&amp; stream.eat(\&quot;'\&quot;)) // tw bold\n                return chain(stream, state, twTokenStrong);\n\n            if (ch == \&quot;&lt;\&quot; &amp;&amp; stream.eat(\&quot;&lt;\&quot;)) // tw macro\n                return chain(stream, state, twTokenMacro);\n\n            return null\n        }\n\n        //   // tw invisible comment\n        //   function twTokenComment(stream, state) {\n        //     var maybeEnd = false, ch;\n        //     while (ch = stream.next()) {\n        //       if (ch == \&quot;/\&quot; &amp;&amp; maybeEnd) {\n        //         state.tokenize = tokenBase;\n        //         break;\n        //       }\n        //       maybeEnd = (ch == \&quot;%\&quot;);\n        //     }\n        //     return \&quot;comment\&quot;;\n        //   }\n\n        // tw strong / bold\n        function twTokenStrong(stream, state) {\n            var maybeEnd = false,\n                ch;\n            while (ch = stream.next()) {\n                if (ch == \&quot;'\&quot; &amp;&amp; maybeEnd) {\n                    state.tokenize = tokenBase;\n                    break;\n                }\n                maybeEnd = (ch == \&quot;'\&quot;);\n            }\n            return \&quot;strong\&quot;;\n        }\n\n        function twTokenMonospace(stream, state) {\n            var ch;\n            while (ch = stream.next()) {\n                if (ch == \&quot;`\&quot;) {\n                    state.tokenize = tokenBase;\n                    break;\n                }\n            }\n            return \&quot;monospace\&quot;;\n        }\n\n        // tw em / italic\n        function twTokenEm(stream, state) {\n            var maybeEnd = false,\n                ch;\n            while (ch = stream.next()) {\n                if (ch == \&quot;/\&quot; &amp;&amp; maybeEnd) {\n                    state.tokenize = tokenBase;\n                    break;\n                }\n                maybeEnd = (ch == \&quot;/\&quot;);\n            }\n            return \&quot;em\&quot;;\n        }\n\n        // tw transclusions\n        function twTranslclude(stream, state) {\n            var maybeEnd = false,\n                ch;\n            while (ch = stream.next()) {\n                if (ch == \&quot;}\&quot; &amp;&amp; maybeEnd) {\n                    state.tokenize = tokenBase;\n                    break;\n                }\n                maybeEnd = (ch == \&quot;}\&quot;);\n            }\n            return \&quot;transclude\&quot;;\n        }\n\n        // tw internal links\n        function twInternalLink(stream, state) {\n            if (stream.current() == '[[') {\n                state.pastDivider = false;\n                // console.log(\&quot;Start of link\&quot;);\n                return 'link';\n            }\n            if (stream.peek() == ']') {\n                stream.next()\n                if(stream.next() == ']') {\n                    state.tokenize = tokenBase;\n                    // console.log(\&quot;End of link\&quot;);\n                    return 'link';\n                }\n            }\n            var pastDivider = state.pastDivider,\n                ch;\n            while (ch = stream.peek()) {\n                // console.log(\&quot;Peeking :\&quot; + ch);\n                if (!pastDivider &amp;&amp; ch=='|') {\n                    stream.next();\n                    state.pastDivider = true;\n                    // console.log(\&quot;Past the divider\&quot;);\n                    return 'link';\n                }\n                if (ch == \&quot;]\&quot; &amp;&amp; stream.peek() == \&quot;]\&quot;) {\n                    // console.log(\&quot;Found end of link\&quot;);\n                    return \&quot;internallink\&quot;;\n                }\n                ch = stream.next();\n                if (/[hf]/i.test(ch) &amp;&amp;\n                        /[ti]/i.test(stream.peek()) &amp;&amp;\n                        stream.match(/\\b(ttps?|tp|ile):\\/\\/[\\-A-Z0-9+&amp;@#\\/%?=~_|$!:,.;]*[A-Z0-9+&amp;@#\\/%=~_|$]/i, true)) {\n                    // console.log(\&quot;Found external link\&quot;);\n                    return \&quot;externallink\&quot;;\n                }\n                stream.eatWhile(/[^|\\]]/);\n            }\n            return null;\n        }\n\n        // tw underlined text\n        function twTokenUnderline(stream, state) {\n            var maybeEnd = false,\n                ch;\n            while (ch = stream.next()) {\n                if (ch == \&quot;_\&quot; &amp;&amp; maybeEnd) {\n                    state.tokenize = tokenBase;\n                    break;\n                }\n                maybeEnd = (ch == \&quot;_\&quot;);\n            }\n            return \&quot;underlined\&quot;;\n        }\n\n        function twSubscript(stream, state) {\n            var maybeEnd = false, ch;\n\n            while (ch = stream.next()) {\n                if (ch == \&quot;,\&quot; &amp;&amp; maybeEnd) {\n                    state.tokenize = tokenBase;\n                    break;\n                }\n                maybeEnd = (ch == \&quot;,\&quot;);\n            }\n            return \&quot;subscript\&quot;;\n        }\n\n        function twSuperscript(stream, state) {\n            var maybeEnd = false, ch;\n\n            while (ch = stream.next()) {\n                if (ch == \&quot;^\&quot; &amp;&amp; maybeEnd) {\n                    state.tokenize = tokenBase;\n                    break;\n                }\n                maybeEnd = (ch == \&quot;^\&quot;);\n            }\n            return \&quot;superscript\&quot;;\n        }\n\n        function twTokenStrike(stream, state) {\n            var maybeEnd = false, ch;\n\n            while (ch = stream.next()) {\n                if (ch == \&quot;~\&quot; &amp;&amp; maybeEnd) {\n                    state.tokenize = tokenBase;\n                    break;\n                }\n                maybeEnd = (ch == \&quot;~\&quot;);\n            }\n            return \&quot;strikethrough\&quot;;\n        }\n\n        function twTokenPre(stream, state) {\n            var sol = stream.sol(), maybeEnd = false, surelyend = false, ch;\n            while (ch = stream.next()) {\n                if (ch == '`' &amp;&amp; surelyend &amp;&amp; stream.eol()) {\n                    stream.next();\n                    state.tokenize = tokenBase;\n                    return \&quot;pre\&quot;;\n                }\n                surelyend = (maybeEnd &amp;&amp; (ch == '`'));\n                maybeEnd = (sol &amp;&amp; ch == '`');\n                sol = stream.sol();\n            }\n            return \&quot;pre\&quot;;\n        }\n\n        function twTokenQuote(stream, state) {\n            var sol = stream.sol(), maybeEnd = false, surelyend = false, ch;\n            while (ch = stream.next()) {\n                if (ch == '&lt;' &amp;&amp; surelyend) {\n                    stream.skipToEnd();\n                    state.tokenize = tokenBase;\n                    return \&quot;quote\&quot;;\n                }\n                surelyend = (maybeEnd &amp;&amp; (ch == '&lt;'));\n                maybeEnd = (sol &amp;&amp; ch == '&lt;');\n                sol = stream.sol();\n            }\n            return \&quot;quote\&quot;;\n        }\n\n\n        function twTokenMacro(stream, state) {\n            if (stream.current() == '&lt;&lt;') {\n                return 'macro';\n            }\n\n            var ch = stream.next();\n            if (!ch) {\n                state.tokenize = tokenBase;\n                return null;\n            }\n            if (ch == \&quot;&gt;\&quot;) {\n                if (stream.peek() == '&gt;') {\n                    stream.next();\n                    state.tokenize = tokenBase;\n                    return \&quot;macro\&quot;;\n                }\n            }\n\n            stream.eatWhile(/[\\w\\$_]/);\n            return keywords.propertyIsEnumerable(stream.current()) ? \&quot;keyword\&quot; : \&quot;macro\&quot;\n        }\n\n        // Interface\n        return {\n            startState: function () {\n                return { tokenize: tokenBase };\n            },\n\n            token: function (stream, state) {\n                if (stream.eatSpace()) return null;\n                var style = state.tokenize(stream, state);\n                return style;\n            }\n        };\n    });\n\n    CodeMirror.defineMIME(\&quot;text/vnd.tiddlywiki\&quot;, \&quot;tiddlywiki5\&quot;);\n});&quot;,
-            &quot;created&quot;: &quot;20200818164318584&quot;,
-            &quot;modified&quot;: &quot;20210327052450347&quot;,
-            &quot;module-type&quot;: &quot;codemirror&quot;,
-            &quot;revision&quot;: &quot;1&quot;,
-            &quot;type&quot;: &quot;application/javascript&quot;
-        }
-    }
-}</pre>
-</div>
-<div created="20210306160051062" dependents="" description="A CMS and website renderer for TiddlyWiki." modified="20210314160827375" name="TiddlyJam" plugin-type="plugin" title="$:/plugins/adithyab/tiddlyjam" type="application/json" version="0.2.4" revision="0" bag="default">
+<div created="20210306160051062" dependents="" description="A CMS and website renderer for TiddlyWiki." modified="20210314160827375" name="TiddlyJam" plugin-type="plugin" title="$:/plugins/adithyab/tiddlyjam" type="application/json" version="0.2.6" revision="0" bag="default">
 <pre>{
     &quot;tiddlers&quot;: {
         &quot;404&quot;: {
@@ -10431,32 +10350,29 @@ Transform your TiddlyWiki into static websites and blogs. Inspired by JamStack
             &quot;title&quot;: &quot;$:/plugins/adithyab/tiddlyjam/renderer/base/footer&quot;,
             &quot;created&quot;: &quot;20200728151702786&quot;,
             &quot;creator&quot;: &quot;Adithya_&quot;,
-            &quot;modified&quot;: &quot;20210314010153595&quot;,
+            &quot;modified&quot;: &quot;20210705123722356&quot;,
             &quot;modifier&quot;: &quot;Adithya_&quot;,
-            &quot;revision&quot;: &quot;4&quot;,
             &quot;tags&quot;: &quot;$:/plugins/adithyab/tiddlyjam/internals&quot;,
             &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;  &lt;footer class=\&quot;footer\&quot;&gt;\n    &lt;div class=\&quot;content has-text-centered\&quot;&gt;\n      &lt;p&gt;\n        Made with &lt;a href=\&quot;https://tiddlyjam.com\&quot;&gt;&lt;strong&gt;TiddlyJam&lt;/strong&gt;&lt;/a&gt; by &lt;a href=\&quot;https://adithyab.in\&quot;&gt;Adithya Badidey&lt;/a&gt;\n      &lt;/p&gt;\n    &lt;/div&gt;\n  &lt;/footer&gt;&quot;
+            &quot;text&quot;: &quot;  &lt;footer class=\&quot;footer\&quot;&gt;\n    &lt;div class=\&quot;content has-text-centered\&quot;&gt;\n      &lt;p&gt;\n        Made by &lt;a href=\&quot;https://github.com/ThaddeusJiang\&quot;&gt;Thaddeus Jiang&lt;/a&gt;\n      &lt;/p&gt;\n    &lt;/div&gt;\n  &lt;/footer&gt;&quot;
         },
         &quot;$:/plugins/adithyab/tiddlyjam/renderer/base/header&quot;: {
             &quot;title&quot;: &quot;$:/plugins/adithyab/tiddlyjam/renderer/base/header&quot;,
             &quot;created&quot;: &quot;20200728151423521&quot;,
             &quot;creator&quot;: &quot;Adithya_&quot;,
-            &quot;modified&quot;: &quot;20210313234025523&quot;,
+            &quot;modified&quot;: &quot;20210705123722374&quot;,
             &quot;modifier&quot;: &quot;Adithya_&quot;,
-            &quot;revision&quot;: &quot;1&quot;,
             &quot;tags&quot;: &quot;$:/plugins/adithyab/tiddlyjam/internals&quot;,
             &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;&lt;nav class=\&quot;navbar\&quot; role=\&quot;navigation\&quot; aria-label=\&quot;main navigation\&quot;&gt;\n        &lt;div class=\&quot;navbar-brand\&quot;&gt;\n            &lt;a class=\&quot;navbar-item\&quot; href={{$:/plugins/adithyab/tiddlyjam/renderer/baseurl}} style=\&quot;font-weight: 700;\&quot;&gt;\n        TiddlyJam\n            &lt;/a&gt;\n        &lt;/div&gt;\n    &lt;/nav&gt;&quot;
+            &quot;text&quot;: &quot;  &lt;div class=\&quot;container\&quot;&gt;\n    &lt;div class=\&quot;column is-6-desktop is-offset-3-desktop is-8 is-offset-2 my-4\&quot;&gt;\n\n      &lt;nav class=\&quot;navbar\&quot; role=\&quot;navigation\&quot; aria-label=\&quot;main navigation\&quot;&gt;\n        &lt;div class=\&quot;navbar-brand\&quot;&gt;\n            &lt;a class=\&quot;navbar-item has-background-dark has-text-white\ttitle is-3\&quot; href={{$:/plugins/adithyab/tiddlyjam/renderer/baseurl}} &gt;\n       {{$:/SiteTitle}}\n            &lt;/a&gt;\n        &lt;/div&gt;\n     &lt;/nav&gt;\n\n     &lt;p class=\&quot;mt-4\&quot;&gt;{{$:/SiteSubtitle}}&lt;/p&gt;\n\n    &lt;/div&gt;\n  &lt;/div&gt;\n&quot;
         },
         &quot;$:/plugins/adithyab/tiddlyjam/renderer/base/imports&quot;: {
             &quot;title&quot;: &quot;$:/plugins/adithyab/tiddlyjam/renderer/base/imports&quot;,
             &quot;created&quot;: &quot;20200805054051611&quot;,
             &quot;modified&quot;: &quot;20210418020622319&quot;,
-            &quot;revision&quot;: &quot;3&quot;,
-            &quot;tags&quot;: &quot;$:/plugins/adithyab/tiddlyjam/internals&quot;,
+            &quot;tags&quot;: &quot;$:/plugins/adithyab/tiddlyjam/internals tiddlyjam.com&quot;,
             &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;&lt;$list filter=\&quot;[all[tiddler+shadows]tag[$:/plugins/adithyab/tiddlyjam/css]]\&quot;&gt;\n`&lt;link rel=\&quot;stylesheet\&quot; href=\&quot;./css/`{{!!title}}`\&quot;/&gt;`\n&lt;/$list&gt;&quot;
+            &quot;text&quot;: &quot;&lt;$list filter=\&quot;[all[tiddler+shadows]tag[$:/plugins/adithyab/tiddlyjam/css]]\&quot;&gt;\n`&lt;link rel=\&quot;stylesheet\&quot; href=\&quot;./css/`{{!!title}}`\&quot;/&gt;`\n&lt;/$list&gt;\n`&lt;script async src=\&quot;https://kit.fontawesome.com/f8d8f6a864.js\&quot; crossorigin=\&quot;anonymous\&quot;&gt;&lt;/script&gt;`&quot;
         },
         &quot;$:/plugins/adithyab/tiddlyjam/renderer/base/seotags&quot;: {
             &quot;title&quot;: &quot;$:/plugins/adithyab/tiddlyjam/renderer/base/seotags&quot;,
@@ -10472,20 +10388,20 @@ Transform your TiddlyWiki into static websites and blogs. Inspired by JamStack
         &quot;$:/plugins/adithyab/tiddlyjam/renderer/baseurl&quot;: {
             &quot;title&quot;: &quot;$:/plugins/adithyab/tiddlyjam/renderer/baseurl&quot;,
             &quot;created&quot;: &quot;20200912184237510&quot;,
-            &quot;modified&quot;: &quot;20210324011253060&quot;,
+            &quot;modified&quot;: &quot;20210705123722443&quot;,
             &quot;tags&quot;: &quot;$:/plugins/adithyab/tiddlyjam/internals&quot;,
             &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;./&quot;
+            &quot;text&quot;: &quot;https://thaddeusjiang.com&quot;
         },
         &quot;$:/plugins/adithyab/tiddlyjam/renderer/blog/body&quot;: {
             &quot;title&quot;: &quot;$:/plugins/adithyab/tiddlyjam/renderer/blog/body&quot;,
             &quot;created&quot;: &quot;20200806142756352&quot;,
             &quot;creator&quot;: &quot;Adithya_&quot;,
-            &quot;modified&quot;: &quot;20210328170534778&quot;,
+            &quot;modified&quot;: &quot;20210705123722382&quot;,
             &quot;modifier&quot;: &quot;Adithya_&quot;,
             &quot;tags&quot;: &quot;$:/plugins/adithyab/tiddlyjam/internals&quot;,
             &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;{{$:/plugins/adithyab/tiddlyjam/renderer/base/header}}\n\n&lt;style&gt;\n.blog p:first-of-type {\nfont-size: 120%;\nfont-style: italic;\n}\n&lt;/style&gt;\n\n&lt;section class=\&quot;section\&quot;&gt;\n        &lt;div class=\&quot;container\&quot;&gt;\n            &lt;div class=\&quot;column is-6-desktop is-offset-3-desktop is-8 is-offset-2\&quot;&gt;\n                &lt;div&gt;\n                    &lt;div class=\&quot;block\&quot;&gt;\n                        &lt;a class=\&quot;button is-link is-inverted\&quot; href={{$:/plugins/adithyab/tiddlyjam/renderer/baseurl}}&gt;\n                            &lt;span class=\&quot;icon\&quot;&gt;\n                &lt;i class=\&quot;fas fa-chevron-circle-left\&quot;&gt;&lt;/i&gt;\n              &lt;/span&gt;\n                            &lt;span&gt;Home&lt;/span&gt;\n                        &lt;/a&gt;\n                    &lt;/div&gt;\n                    &lt;div class=\&quot;block content blog\&quot;&gt;\n                     &lt;h2 class=\&quot;title is-3\&quot;&gt;&lt;$view field=\&quot;title\&quot; /&gt;&lt;/h2&gt;\n                        &lt;div class=\&quot;subtitle is-6\&quot;&gt;&lt;&lt;get_published_date&gt;&gt;&lt;/div&gt;\n                &lt;$list filter=\&quot;[all[current]]\&quot;&gt;\n\n                    &lt;$transclude /&gt;\n\n                &lt;/$list&gt;\n&lt;/div&gt;\n                &lt;/div&gt;\n                &lt;hr /&gt;\n            &lt;/div&gt;\n        &lt;/div&gt;\n    &lt;/section&gt;\n\n&lt;style&gt;\n.tc-blog p:first-of-type {\nfont-size: 150%\n&lt;/style&gt;&quot;
+            &quot;text&quot;: &quot;{{$:/plugins/adithyab/tiddlyjam/renderer/base/header}}      \n\n&lt;div class=\&quot;container mt-5\&quot;&gt;\n  &lt;div class=\&quot;column is-6-desktop is-offset-3-desktop is-8 is-offset-2\&quot;&gt;\n      &lt;div&gt;\n          &lt;div class=\&quot;block content blog\&quot;&gt;\n            &lt;h1 class=\&quot;title\&quot;&gt;&lt;$view field=\&quot;title\&quot; /&gt;&lt;/h1&gt;\n            &lt;hr /&gt;\n\n            &lt;$list filter=\&quot;[all[current]]\&quot;&gt;\n\n            &lt;$transclude /&gt;\n\n            &lt;/$list&gt;\n          &lt;/div&gt;\n      &lt;/div&gt;\n      &lt;hr /&gt;\n  &lt;/div&gt;\n&lt;/div&gt;     \n\n&quot;
         },
         &quot;$:/plugins/adithyab/tiddlyjam/renderer/blog/extract&quot;: {
             &quot;title&quot;: &quot;$:/plugins/adithyab/tiddlyjam/renderer/blog/extract&quot;,
@@ -10508,11 +10424,10 @@ Transform your TiddlyWiki into static websites and blogs. Inspired by JamStack
         &quot;$:/plugins/adithyab/tiddlyjam/renderer/rss&quot;: {
             &quot;title&quot;: &quot;$:/plugins/adithyab/tiddlyjam/renderer/rss&quot;,
             &quot;created&quot;: &quot;20200913085259429&quot;,
-            &quot;modified&quot;: &quot;20201117084124255&quot;,
-            &quot;revision&quot;: &quot;0&quot;,
+            &quot;modified&quot;: &quot;20210705123722396&quot;,
             &quot;tags&quot;: &quot;$:/plugins/adithyab/tiddlyjam/internals&quot;,
             &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;&amp;lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;UTF-8\&quot;?&amp;gt;\n&amp;lt;rss version=\&quot;2.0\&quot; xmlns:atom=\&quot;http://www.w3.org/2005/Atom\&quot;&amp;gt;\n&amp;lt;channel&amp;gt;\n\n   &amp;lt;title&amp;gt;{{$:/SiteTitle}}&amp;lt;/title&amp;gt;\n   &amp;lt;link&amp;gt;&lt;$text text={{$:/AbsoluteBaseUrl}}/&gt;&amp;lt;/link&amp;gt;\n   &amp;lt;atom:link href=\&quot;&lt;$text text={{$:/AbsoluteBaseUrl}}/&gt;/rss.xml\&quot; rel=\&quot;self\&quot; type=\&quot;application/rss+xml\&quot; /&amp;gt;\n   &amp;lt;description&amp;gt;{{$:/SiteSubtitle}}&amp;lt;/description&amp;gt;\n\n&lt;$list filter=\&quot;[tag[$:/plugins/adithyab/tiddlyjam/live]!sort[title]]\&quot;&gt;\n   &amp;lt;item&amp;gt;\n      &amp;lt;title&amp;gt;{{!!title}}&amp;lt;/title&amp;gt;\n      &amp;lt;link&amp;gt;&lt;$text text={{$:/AbsoluteBaseUrl}}/&gt;/&lt;$macrocall $name=\&quot;tv-get-export-path\&quot; title={{!!title}}/&gt;&amp;lt;/link&amp;gt;\n      &amp;lt;guid&amp;gt;&lt;$text text={{$:/AbsoluteBaseUrl}}/&gt;/&lt;$macrocall $name=\&quot;tv-get-export-path\&quot; title={{!!title}}/&gt;&amp;lt;/guid&amp;gt;\n      &amp;lt;pubDate&amp;gt;&lt;$list filter=\&quot;[{!!published}is[blank]then{!!created}else{!!published}]\&quot;&gt;&lt;$view field=\&quot;title\&quot; format=\&quot;date\&quot; template=\&quot;ddd, DD MMM YYYY hh:mm:ss TZD\&quot; /&gt;&lt;/$list&gt;&amp;lt;/pubDate&amp;gt;\n   &amp;lt;/item&amp;gt;\n&lt;/$list&gt;\n&amp;lt;/channel&amp;gt;\n&amp;lt;/rss&amp;gt;\n&quot;
+            &quot;text&quot;: &quot;&amp;lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;UTF-8\&quot;?&amp;gt;\n&amp;lt;rss version=\&quot;2.0\&quot; xmlns:atom=\&quot;http://www.w3.org/2005/Atom\&quot;&amp;gt;\n&amp;lt;channel&amp;gt;\n\n   &amp;lt;title&amp;gt;{{$:/SiteTitle}}&amp;lt;/title&amp;gt;\n   &amp;lt;link&amp;gt;&lt;$text text={{$:/plugins/adithyab/tiddlyjam/renderer/baseurl}}/&gt;&amp;lt;/link&amp;gt;\n   &amp;lt;atom:link href=\&quot;&lt;$text text={{$:/plugins/adithyab/tiddlyjam/renderer/baseurl}}/&gt;/rss.xml\&quot; rel=\&quot;self\&quot; type=\&quot;application/rss+xml\&quot; /&amp;gt;\n   &amp;lt;description&amp;gt;{{$:/SiteSubtitle}}&amp;lt;/description&amp;gt;\n\n&lt;$list filter=\&quot;[tag[$:/plugins/adithyab/tiddlyjam/live]!sort[title]]\&quot;&gt;\n   &amp;lt;item&amp;gt;\n      &amp;lt;title&amp;gt;{{!!title}}&amp;lt;/title&amp;gt;\n      &amp;lt;link&amp;gt;&lt;$text text={{$:/plugins/adithyab/tiddlyjam/renderer/baseurl}}/&gt;/&lt;$macrocall $name=\&quot;tv-get-export-path\&quot; title={{!!title}}/&gt;&amp;lt;/link&amp;gt;\n      &amp;lt;guid&amp;gt;&lt;$text text={{$:/plugins/adithyab/tiddlyjam/renderer/baseurl}}/&gt;/&lt;$macrocall $name=\&quot;tv-get-export-path\&quot; title={{!!title}}/&gt;&amp;lt;/guid&amp;gt;\n      &amp;lt;pubDate&amp;gt;&lt;$list filter=\&quot;[{!!published}is[blank]then{!!created}else{!!published}]\&quot;&gt;&lt;$view field=\&quot;title\&quot; format=\&quot;date\&quot; template=\&quot;ddd, DD MMM YYYY hh:mm:ss TZD\&quot; /&gt;&lt;/$list&gt;&amp;lt;/pubDate&amp;gt;\n   &amp;lt;/item&amp;gt;\n&lt;/$list&gt;\n&amp;lt;/channel&amp;gt;\n&amp;lt;/rss&amp;gt;\n&quot;
         },
         &quot;$:/plugins/adithyab/tiddlyjam/renderer/sitemap&quot;: {
             &quot;title&quot;: &quot;$:/plugins/adithyab/tiddlyjam/renderer/sitemap&quot;,
@@ -10526,10 +10441,10 @@ Transform your TiddlyWiki into static websites and blogs. Inspired by JamStack
         &quot;$:/plugins/adithyab/tiddlyjam/renderer/subtitle&quot;: {
             &quot;title&quot;: &quot;$:/plugins/adithyab/tiddlyjam/renderer/subtitle&quot;,
             &quot;created&quot;: &quot;20210324010140793&quot;,
-            &quot;modified&quot;: &quot;20210324011203248&quot;,
+            &quot;modified&quot;: &quot;20210705123722404&quot;,
             &quot;tags&quot;: &quot;$:/plugins/adithyab/tiddlyjam/internals&quot;,
             &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;Made with TiddlyJam&quot;
+            &quot;text&quot;: &quot;{{$:/SiteSubtitle}}&quot;
         },
         &quot;$:/plugins/adithyab/tiddlyjam/renderer/tags/body&quot;: {
             &quot;title&quot;: &quot;$:/plugins/adithyab/tiddlyjam/renderer/tags/body&quot;,
@@ -10555,11 +10470,10 @@ Transform your TiddlyWiki into static websites and blogs. Inspired by JamStack
             &quot;title&quot;: &quot;$:/plugins/adithyab/tiddlyjam/renderer/templates/blog_verbose&quot;,
             &quot;created&quot;: &quot;20200806173743683&quot;,
             &quot;description&quot;: &quot;This is a short excerpt about this article.&quot;,
-            &quot;modified&quot;: &quot;20210314000453286&quot;,
-            &quot;revision&quot;: &quot;1&quot;,
+            &quot;modified&quot;: &quot;20210705123722450&quot;,
             &quot;tags&quot;: &quot;$:/plugins/adithyab/tiddlyjam/internals&quot;,
             &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;\\whitespace trim\n\n&lt;div&gt;\n  &lt;div class=\&quot;block\&quot;&gt;\n    &lt;h2 class=\&quot;title is-4\&quot;&gt;\n      &lt;$link&gt;{{!!title}}&lt;/$link&gt;\n    &lt;/h2&gt;\n    &lt;div class=\&quot;subtitle is-6\&quot;&gt;\n      &lt;&lt;get_published_date&gt;&gt;\n    &lt;/div&gt;\n    &lt;p&gt;\n      &lt;&lt;get_description&gt;&gt;\n    &lt;/p&gt;\n  &lt;/div&gt;\n  &lt;div class=\&quot;block\&quot;&gt;\n    &lt;$link&gt;\n      &lt;button class=\&quot;button is-link is-outlined\&quot;&gt;Read&lt;/button&gt;\n    &lt;/$link&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n&lt;hr /&gt;&quot;
+            &quot;text&quot;: &quot;\\whitespace trim\n\n&lt;div&gt;\n  &lt;div class=\&quot;block\&quot;&gt;\n    &lt;h2 class=\&quot;subtitle\&quot;&gt;\n      &lt;$link&gt;{{!!title}}&lt;/$link&gt;\n    &lt;/h2&gt;\n    &lt;p&gt;\n      &lt;&lt;get_description&gt;&gt;\n    &lt;/p&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n&lt;hr /&gt;&quot;
         },
         &quot;$:/plugins/adithyab/tiddlyjam/renderer/title&quot;: {
             &quot;title&quot;: &quot;$:/plugins/adithyab/tiddlyjam/renderer/title&quot;,
@@ -10640,20 +10554,6 @@ Transform your TiddlyWiki into static websites and blogs. Inspired by JamStack
             &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
             &quot;text&quot;: &quot;&lt;section class=\&quot;section mt-6\&quot;&gt;\n    &lt;div class=\&quot;container\&quot;&gt;\n        &lt;div class=\&quot;column is-6-desktop is-offset-3-desktop is-8 is-offset-2\&quot;&gt;\n            &lt;h1 class=\&quot;title\&quot; style=\&quot;font-size: 400%;\&quot;&gt;Blog&lt;/h1&gt;\n        &lt;/div&gt;\n    &lt;/div&gt;\n    &lt;div&gt;\n        &lt;div class=\&quot;container mt-6\&quot;&gt;\n            &lt;div class=\&quot;column is-6-desktop is-offset-3-desktop is-8 is-offset-2\&quot;&gt;\n                &lt;$list filter=\&quot;[tag[$:/plugins/adithyab/tiddlyjam/live]tag[blog]!sort[published]limit[2]]\&quot;&gt;\n                    {{||$:/plugins/adithyab/tiddlyjam/renderer/templates/blog_verbose}}\n                &lt;/$list&gt;\n            &lt;/div&gt;\n        &lt;/div&gt;\n        &lt;div class=\&quot;container mt-6\&quot;&gt;\n            &lt;div class=\&quot;column is-6-desktop is-offset-3-desktop is-8 is-offset-2\&quot;&gt;\n                &lt;$list filter=\&quot;[tag[$:/plugins/adithyab/tiddlyjam/live]tag[blog]!sort[published]rest[2]]\&quot;&gt;\n                    {{||$:/plugins/adithyab/tiddlyjam/renderer/templates/blog_compact}}\n                &lt;/$list&gt;\n            &lt;/div&gt;\n        &lt;/div&gt;\n    &lt;/div&gt;\n&lt;/section&gt;&quot;
         },
-        &quot;index&quot;: {
-            &quot;title&quot;: &quot;index&quot;,
-            &quot;created&quot;: &quot;20200728102956586&quot;,
-            &quot;creator&quot;: &quot;Adithya_&quot;,
-            &quot;description&quot;: &quot;A static generator for TiddlyWiki. Inspired by JamStack.&quot;,
-            &quot;modified&quot;: &quot;20210314004707229&quot;,
-            &quot;modifier&quot;: &quot;Adithya_&quot;,
-            &quot;name&quot;: &quot;Homepage&quot;,
-            &quot;published&quot;: &quot;20210314001527357&quot;,
-            &quot;revision&quot;: &quot;13&quot;,
-            &quot;tags&quot;: &quot;$:/plugins/adithyab/tiddlyjam/page $:/plugins/adithyab/tiddlyjam/internals $:/plugins/adithyab/tiddlyjam/live&quot;,
-            &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;&lt;section class=\&quot;section mt-6\&quot;&gt;\n    &lt;div class=\&quot;container\&quot;&gt;\n        &lt;div class=\&quot;column is-6-desktop is-offset-3-desktop is-8 is-offset-2\&quot;&gt;\n            &lt;h1 class=\&quot;title\&quot; style=\&quot;font-size: 400%;\&quot;&gt;{{$:/SiteTitle}}&lt;/h1&gt;\n            &lt;div class=\&quot;subtitle\&quot;&gt;\n                {{$:/SiteSubtitle}}\n            &lt;/div&gt;\n        &lt;/div&gt;\n    &lt;/div&gt;\n    &lt;div&gt;\n        &lt;div class=\&quot;container mt-6\&quot;&gt;\n            &lt;div class=\&quot;column is-6-desktop is-offset-3-desktop is-8 is-offset-2\&quot;&gt;\n                &lt;$list filter=\&quot;[tag[$:/plugins/adithyab/tiddlyjam/live]tag[blog]!sort[published]limit[5]]\&quot;&gt;\n                    {{||$:/plugins/adithyab/tiddlyjam/renderer/templates/blog_verbose}}\n                &lt;/$list&gt;\n            &lt;/div&gt;\n        &lt;/div&gt;\n    &lt;/div&gt;\n&lt;/section&gt;&quot;
-        },
         &quot;tiddlyjam.min.css&quot;: {
             &quot;title&quot;: &quot;tiddlyjam.min.css&quot;,
             &quot;created&quot;: &quot;20210417180806861&quot;,
@@ -10665,109 +10565,13 @@ Transform your TiddlyWiki into static websites and blogs. Inspired by JamStack
         &quot;vanilla.css&quot;: {
             &quot;title&quot;: &quot;vanilla.css&quot;,
             &quot;created&quot;: &quot;20210430124928142&quot;,
-            &quot;modified&quot;: &quot;20210430130458157&quot;,
+            &quot;modified&quot;: &quot;20210705123722422&quot;,
             &quot;tags&quot;: &quot;$:/plugins/adithyab/tiddlyjam/css $:/plugins/adithyab/tiddlyjam/internals&quot;,
             &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;.tc-btn-big-green { display: inline-block; padding: 8px; margin: 4px 8px 4px 8px; background: #34c734; color: #ffffff; fill: #ffffff; border: none; border-radius: 2px; font-size: 1.2em; line-height: 1.4em; text-decoration: none; }\n\n.tc-btn-big-green svg, .tc-btn-big-green img { height: 2em; width: 2em; vertical-align: middle; fill: #ffffff; }&quot;
+            &quot;text&quot;: &quot;a {\n  word-break: break-all;\n}\n\nblockquote { border-left: 5px solid #bbb; quotes: \&quot;\\201C\&quot;\&quot;\\201D\&quot;\&quot;\\2018\&quot;\&quot;\\2019\&quot;; }\n\nblockquote &gt; div { margin-top: 1em; margin-bottom: 1em; }\n\nblockquote.tc-big-quote { font-family: Georgia, serif; position: relative; background: #f5f5f5; border-left: none; padding: 10px; border-radius: 8px; }\n\nblockquote.tc-big-quote cite:before { content: \&quot;\\2014 \\2009\&quot;; }&quot;
         }
     }
 }</pre>
-</div>
-<div created="20200728151702786" creator="Adithya_" modified="20210314051837274" modifier="Adithya_" tags="$:/plugins/adithyab/tiddlyjam/internals tiddlyjam.com" title="$:/plugins/adithyab/tiddlyjam/renderer/base/footer" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>  &lt;footer class=&quot;footer&quot;&gt;
-    &lt;div class=&quot;content has-text-centered&quot;&gt;
-      &lt;p&gt;
-        This website is rendered using &lt;strong&gt;TiddlyJam&lt;/strong&gt; by &lt;a href=&quot;https://adithyab.in&quot;&gt;Adithya Badidey&lt;/a&gt;.
-&lt;/p&gt;
-&lt;p&gt;
-The source code is licensed
-        &lt;a href=&quot;http://opensource.org/licenses/mit-license.php&quot;&gt;MIT&lt;/a&gt;. The website content
-        is licensed &lt;a href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot;&gt;CC BY NC SA 4.0&lt;/a&gt;.
-      &lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/footer&gt;</pre>
-</div>
-<div created="20200728151423521" creator="Adithya_" modified="20210324011645112" modifier="Adithya_" tags="$:/plugins/adithyab/tiddlyjam/internals" title="$:/plugins/adithyab/tiddlyjam/renderer/base/header" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;nav class=&quot;navbar&quot; role=&quot;navigation&quot; aria-label=&quot;main navigation&quot;&gt;
-        &lt;div class=&quot;navbar-brand&quot;&gt;
-            &lt;a class=&quot;navbar-item&quot; href={{$:/plugins/adithyab/tiddlyjam/renderer/baseurl}} style=&quot;font-weight: 700;&quot;&gt;
-        TiddlyJam
-            &lt;/a&gt;
-        &lt;/div&gt;
-    &lt;/nav&gt;</pre>
-</div>
-<div created="20200805054051611" modified="20210418020622319" tags="$:/plugins/adithyab/tiddlyjam/internals tiddlyjam.com" title="$:/plugins/adithyab/tiddlyjam/renderer/base/imports" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;$list filter=&quot;[all[tiddler+shadows]tag[$:/plugins/adithyab/tiddlyjam/css]]&quot;&gt;
-`&lt;link rel=&quot;stylesheet&quot; href=&quot;./css/`{{!!title}}`&quot;/&gt;`
-&lt;/$list&gt;
-`&lt;script async src=&quot;https://kit.fontawesome.com/f8d8f6a864.js&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;`</pre>
-</div>
-<div created="20200806142756352" creator="Adithya_" modified="20210328170534778" modifier="Adithya_" tags="$:/plugins/adithyab/tiddlyjam/internals" title="$:/plugins/adithyab/tiddlyjam/renderer/blog/body" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>{{$:/plugins/adithyab/tiddlyjam/renderer/base/header}}
-
-&lt;style&gt;
-.blog p:first-of-type {
-font-size: 120%;
-font-style: italic;
-}
-&lt;/style&gt;
-
-&lt;section class=&quot;section&quot;&gt;
-        &lt;div class=&quot;container&quot;&gt;
-            &lt;div class=&quot;column is-6-desktop is-offset-3-desktop is-8 is-offset-2&quot;&gt;
-                &lt;div&gt;
-                    &lt;div class=&quot;block&quot;&gt;
-                        &lt;a class=&quot;button is-link is-inverted&quot; href={{$:/plugins/adithyab/tiddlyjam/renderer/baseurl}}&gt;
-                            &lt;span class=&quot;icon&quot;&gt;
-                &lt;i class=&quot;fas fa-chevron-circle-left&quot;&gt;&lt;/i&gt;
-              &lt;/span&gt;
-                            &lt;span&gt;Home&lt;/span&gt;
-                        &lt;/a&gt;
-                    &lt;/div&gt;
-                    &lt;div class=&quot;block content blog&quot;&gt;
-                     &lt;h2 class=&quot;title is-3&quot;&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/h2&gt;
-                        &lt;div class=&quot;subtitle is-6&quot;&gt;&lt;&lt;get_published_date&gt;&gt;&lt;/div&gt;
-                &lt;$list filter=&quot;[all[current]]&quot;&gt;
-
-                    &lt;$transclude /&gt;
-
-                &lt;/$list&gt;
-&lt;/div&gt;
-                &lt;/div&gt;
-                &lt;hr /&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/section&gt;
-
-&lt;style&gt;
-.tc-blog p:first-of-type {
-font-size: 150%
-&lt;/style&gt;</pre>
-</div>
-<div created="20200913085259429" modified="20201117084124255" tags="$:/plugins/adithyab/tiddlyjam/internals" title="$:/plugins/adithyab/tiddlyjam/renderer/rss" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&amp;gt;
-&amp;lt;rss version=&quot;2.0&quot; xmlns:atom=&quot;http://www.w3.org/2005/Atom&quot;&amp;gt;
-&amp;lt;channel&amp;gt;
-
-   &amp;lt;title&amp;gt;{{$:/SiteTitle}}&amp;lt;/title&amp;gt;
-   &amp;lt;link&amp;gt;&lt;$text text={{$:/AbsoluteBaseUrl}}/&gt;&amp;lt;/link&amp;gt;
-   &amp;lt;atom:link href=&quot;&lt;$text text={{$:/AbsoluteBaseUrl}}/&gt;/rss.xml&quot; rel=&quot;self&quot; type=&quot;application/rss+xml&quot; /&amp;gt;
-   &amp;lt;description&amp;gt;{{$:/SiteSubtitle}}&amp;lt;/description&amp;gt;
-
-&lt;$list filter=&quot;[tag[$:/plugins/adithyab/tiddlyjam/live]!sort[title]]&quot;&gt;
-   &amp;lt;item&amp;gt;
-      &amp;lt;title&amp;gt;{{!!title}}&amp;lt;/title&amp;gt;
-      &amp;lt;link&amp;gt;&lt;$text text={{$:/AbsoluteBaseUrl}}/&gt;/&lt;$macrocall $name=&quot;tv-get-export-path&quot; title={{!!title}}/&gt;&amp;lt;/link&amp;gt;
-      &amp;lt;guid&amp;gt;&lt;$text text={{$:/AbsoluteBaseUrl}}/&gt;/&lt;$macrocall $name=&quot;tv-get-export-path&quot; title={{!!title}}/&gt;&amp;lt;/guid&amp;gt;
-      &amp;lt;pubDate&amp;gt;&lt;$list filter=&quot;[{!!published}is[blank]then{!!created}else{!!published}]&quot;&gt;&lt;$view field=&quot;title&quot; format=&quot;date&quot; template=&quot;ddd, DD MMM YYYY hh:mm:ss TZD&quot; /&gt;&lt;/$list&gt;&amp;lt;/pubDate&amp;gt;
-   &amp;lt;/item&amp;gt;
-&lt;/$list&gt;
-&amp;lt;/channel&amp;gt;
-&amp;lt;/rss&amp;gt;
-</pre>
-</div>
-<div created="20210324010140793" modified="20210324023222614" tags="$:/plugins/adithyab/tiddlyjam/internals" title="$:/plugins/adithyab/tiddlyjam/renderer/subtitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>{{:/SiteSubtitle}}</pre>
 </div>
 <div author="NicolasPetton" core-version="&gt;=5.1.22" created="20210323214444550" dependents="" description="JavaScript hooks for mobile devices support of the Notebook theme" list="" modified="20210323214444550" name="Mobile support for the Notebook theme" plugin-type="plugin" source="https://github.com/NicolasPetton/Notebook" title="$:/plugins/nico/notebook-mobile" type="application/json" version="1.0.0" revision="0" bag="default">
 <pre>{

@@ -1,9 +1,17 @@
 created: 20210430124928142
-modified: 20210430130458157
+modified: 20210705123722422
 tags: $:/plugins/adithyab/tiddlyjam/css $:/plugins/adithyab/tiddlyjam/internals
 title: vanilla.css
 type: text/vnd.tiddlywiki
 
-.tc-btn-big-green { display: inline-block; padding: 8px; margin: 4px 8px 4px 8px; background: #34c734; color: #ffffff; fill: #ffffff; border: none; border-radius: 2px; font-size: 1.2em; line-height: 1.4em; text-decoration: none; }
+a {
+  word-break: break-all;
+}
 
-.tc-btn-big-green svg, .tc-btn-big-green img { height: 2em; width: 2em; vertical-align: middle; fill: #ffffff; }
+blockquote { border-left: 5px solid #bbb; quotes: "\201C""\201D""\2018""\2019"; }
+
+blockquote > div { margin-top: 1em; margin-bottom: 1em; }
+
+blockquote.tc-big-quote { font-family: Georgia, serif; position: relative; background: #f5f5f5; border-left: none; padding: 10px; border-radius: 8px; }
+
+blockquote.tc-big-quote cite:before { content: "\2014 \2009"; }

@@ -1,7 +1,7 @@
 created: 20210324010140793
-modified: 20210324011203248
+modified: 20210705123722404
 tags: $:/plugins/adithyab/tiddlyjam/internals
 title: $:/plugins/adithyab/tiddlyjam/renderer/subtitle
 type: text/vnd.tiddlywiki
 
-Made with TiddlyJam
+{{$:/SiteSubtitle}}

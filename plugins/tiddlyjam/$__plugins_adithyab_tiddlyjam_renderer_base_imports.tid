@@ -1,10 +1,10 @@
 created: 20200805054051611
 modified: 20210418020622319
-revision: 3
-tags: $:/plugins/adithyab/tiddlyjam/internals
+tags: $:/plugins/adithyab/tiddlyjam/internals tiddlyjam.com
 title: $:/plugins/adithyab/tiddlyjam/renderer/base/imports
 type: text/vnd.tiddlywiki
 
 <$list filter="[all[tiddler+shadows]tag[$:/plugins/adithyab/tiddlyjam/css]]">
 `<link rel="stylesheet" href="./css/`{{!!title}}`"/>`
 </$list>
+`<script async src="https://kit.fontawesome.com/f8d8f6a864.js" crossorigin="anonymous"></script>`

@@ -1,8 +1,7 @@
 created: 20200728151702786
 creator: Adithya_
-modified: 20210314010153595
+modified: 20210705123722356
 modifier: Adithya_
-revision: 4
 tags: $:/plugins/adithyab/tiddlyjam/internals
 title: $:/plugins/adithyab/tiddlyjam/renderer/base/footer
 type: text/vnd.tiddlywiki
@@ -10,7 +9,7 @@ type: text/vnd.tiddlywiki
   <footer class="footer">
     <div class="content has-text-centered">
       <p>
-        Made with <a href="https://tiddlyjam.com"><strong>TiddlyJam</strong></a> by <a href="https://adithyab.in">Adithya Badidey</a>
+        Made by <a href="https://github.com/ThaddeusJiang">Thaddeus Jiang</a>
       </p>
     </div>
   </footer>
