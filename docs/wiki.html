@@ -167,6 +167,8 @@ Error message and password prompt
 
 <li>$:/plugins/adithyab/tiddlyjam</li>
 
+<li>$:/plugins/adithyab/tiddlyjam/renderer/subtitle</li>
+
 <li>$:/plugins/nico/notebook-mobile</li>
 
 <li>$:/plugins/nico/shields</li>
@@ -214,8 +216,6 @@ Error message and password prompt
 <li>Getting Started with TiddlyJam</li>
 
 <li>index</li>
-
-<li>vanilla.css</li>
 
 <li>Why TiddlyJam?</li>
 
@@ -10554,6 +10554,20 @@ Transform your TiddlyWiki into static websites and blogs. Inspired by JamStack
             &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
             &quot;text&quot;: &quot;&lt;section class=\&quot;section mt-6\&quot;&gt;\n    &lt;div class=\&quot;container\&quot;&gt;\n        &lt;div class=\&quot;column is-6-desktop is-offset-3-desktop is-8 is-offset-2\&quot;&gt;\n            &lt;h1 class=\&quot;title\&quot; style=\&quot;font-size: 400%;\&quot;&gt;Blog&lt;/h1&gt;\n        &lt;/div&gt;\n    &lt;/div&gt;\n    &lt;div&gt;\n        &lt;div class=\&quot;container mt-6\&quot;&gt;\n            &lt;div class=\&quot;column is-6-desktop is-offset-3-desktop is-8 is-offset-2\&quot;&gt;\n                &lt;$list filter=\&quot;[tag[$:/plugins/adithyab/tiddlyjam/live]tag[blog]!sort[published]limit[2]]\&quot;&gt;\n                    {{||$:/plugins/adithyab/tiddlyjam/renderer/templates/blog_verbose}}\n                &lt;/$list&gt;\n            &lt;/div&gt;\n        &lt;/div&gt;\n        &lt;div class=\&quot;container mt-6\&quot;&gt;\n            &lt;div class=\&quot;column is-6-desktop is-offset-3-desktop is-8 is-offset-2\&quot;&gt;\n                &lt;$list filter=\&quot;[tag[$:/plugins/adithyab/tiddlyjam/live]tag[blog]!sort[published]rest[2]]\&quot;&gt;\n                    {{||$:/plugins/adithyab/tiddlyjam/renderer/templates/blog_compact}}\n                &lt;/$list&gt;\n            &lt;/div&gt;\n        &lt;/div&gt;\n    &lt;/div&gt;\n&lt;/section&gt;&quot;
         },
+        &quot;index&quot;: {
+            &quot;title&quot;: &quot;index&quot;,
+            &quot;created&quot;: &quot;20200728102956586&quot;,
+            &quot;creator&quot;: &quot;Adithya_&quot;,
+            &quot;description&quot;: &quot;A static generator for TiddlyWiki. Inspired by JamStack.&quot;,
+            &quot;modified&quot;: &quot;20210314004707229&quot;,
+            &quot;modifier&quot;: &quot;Adithya_&quot;,
+            &quot;name&quot;: &quot;Homepage&quot;,
+            &quot;published&quot;: &quot;20210314001527357&quot;,
+            &quot;revision&quot;: &quot;13&quot;,
+            &quot;tags&quot;: &quot;$:/plugins/adithyab/tiddlyjam/page $:/plugins/adithyab/tiddlyjam/internals $:/plugins/adithyab/tiddlyjam/live&quot;,
+            &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
+            &quot;text&quot;: &quot;&lt;section class=\&quot;section mt-6\&quot;&gt;\n    &lt;div class=\&quot;container\&quot;&gt;\n        &lt;div class=\&quot;column is-6-desktop is-offset-3-desktop is-8 is-offset-2\&quot;&gt;\n            &lt;h1 class=\&quot;title\&quot; style=\&quot;font-size: 400%;\&quot;&gt;{{$:/SiteTitle}}&lt;/h1&gt;\n            &lt;div class=\&quot;subtitle\&quot;&gt;\n                {{$:/SiteSubtitle}}\n            &lt;/div&gt;\n        &lt;/div&gt;\n    &lt;/div&gt;\n    &lt;div&gt;\n        &lt;div class=\&quot;container mt-6\&quot;&gt;\n            &lt;div class=\&quot;column is-6-desktop is-offset-3-desktop is-8 is-offset-2\&quot;&gt;\n                &lt;$list filter=\&quot;[tag[$:/plugins/adithyab/tiddlyjam/live]tag[blog]!sort[published]limit[5]]\&quot;&gt;\n                    {{||$:/plugins/adithyab/tiddlyjam/renderer/templates/blog_verbose}}\n                &lt;/$list&gt;\n            &lt;/div&gt;\n        &lt;/div&gt;\n    &lt;/div&gt;\n&lt;/section&gt;&quot;
+        },
         &quot;tiddlyjam.min.css&quot;: {
             &quot;title&quot;: &quot;tiddlyjam.min.css&quot;,
             &quot;created&quot;: &quot;20210417180806861&quot;,
@@ -10572,6 +10586,9 @@ Transform your TiddlyWiki into static websites and blogs. Inspired by JamStack
         }
     }
 }</pre>
+</div>
+<div created="20210324010140793" modified="20210324023222614" tags="$:/plugins/adithyab/tiddlyjam/internals" title="$:/plugins/adithyab/tiddlyjam/renderer/subtitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>{{:/SiteSubtitle}}</pre>
 </div>
 <div author="NicolasPetton" core-version="&gt;=5.1.22" created="20210323214444550" dependents="" description="JavaScript hooks for mobile devices support of the Notebook theme" list="" modified="20210323214444550" name="Mobile support for the Notebook theme" plugin-type="plugin" source="https://github.com/NicolasPetton/Notebook" title="$:/plugins/nico/notebook-mobile" type="application/json" version="1.0.0" revision="0" bag="default">
 <pre>{
@@ -11825,11 +11842,6 @@ TiddlyJam has support RSS 2.0, it need full URL with domain. Just create a tiddl
 &lt;style&gt;
 {{$:/plugins/nico/shields/stylesheet}}
 &lt;/style&gt;</pre>
-</div>
-<div created="20210430124928142" modified="20210430130458157" tags="$:/plugins/adithyab/tiddlyjam/css" title="vanilla.css" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>.tc-btn-big-green { display: inline-block; padding: 8px; margin: 4px 8px 4px 8px; background: #34c734; color: #ffffff; fill: #ffffff; border: none; border-radius: 2px; font-size: 1.2em; line-height: 1.4em; text-decoration: none; }
-
-.tc-btn-big-green svg, .tc-btn-big-green img { height: 2em; width: 2em; vertical-align: middle; fill: #ffffff; }</pre>
 </div>
 <div created="20210313202431663" modified="20210314040404629" published="20210314001542132" tags="blog $:/plugins/adithyab/tiddlyjam/live" title="Why TiddlyJam?" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>Why does this exist? Why did someone feel the need to make another static website generator?
